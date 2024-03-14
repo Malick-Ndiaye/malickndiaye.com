@@ -5,13 +5,109 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c26876a-a947-4af5-b7f1-e1cef2720ab7" name="Changes" comment="Project setup">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_layouts/default.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_sass/_interactables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/main.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/texts/sub pages/réalisations/professionnelles/SimpLink.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/texts/sub pages/réalisations/professionnelles/Warnit.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/fonts/Montserrat/Montserrat-Bold.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fonts/Montserrat/Montserrat-Bold.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/fonts/Montserrat/Montserrat-Light.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fonts/Montserrat/Montserrat-Light.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/fonts/Montserrat/Montserrat-Regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fonts/Montserrat/Montserrat-Regular.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/fonts/Taviraj/taviraj-bold-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fonts/Taviraj/taviraj-bold-webfont.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/fonts/Taviraj/taviraj-light-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fonts/Taviraj/taviraj-light-webfont.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/fonts/Taviraj/taviraj-regular-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fonts/Taviraj/taviraj-regular-webfont.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/images/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/images/icons/close.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/icons/close.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/images/icons/menu.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/icons/menu.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/images/illustrations/Biologist-bro.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/illustrations/Biologist-bro.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/images/illustrations/Certification-bro.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/illustrations/Certification-bro.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/images/illustrations/Digital transformation-bro.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/illustrations/Digital transformation-bro.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/images/illustrations/Film rolls-bro.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/illustrations/Film rolls-bro.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/images/illustrations/Goal-bro.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/illustrations/Goal-bro.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/images/illustrations/Mention-bro.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/illustrations/Mention-bro.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/images/illustrations/Personal data-bro.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/illustrations/Personal data-bro.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/images/illustrations/Powerful-bro.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/illustrations/Powerful-bro.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/images/illustrations/Profile data-bro.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/illustrations/Profile data-bro.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/images/illustrations/Project Stages-bro.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/illustrations/Project Stages-bro.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/images/illustrations/Scrum board-bro.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/illustrations/Scrum board-bro.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/images/illustrations/Season change-bro.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/illustrations/Season change-bro.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/images/illustrations/Signing a contract-bro.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/illustrations/Signing a contract-bro.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/images/illustrations/Team spirit-bro.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/illustrations/Team spirit-bro.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/images/illustrations/Training at home-bro.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/illustrations/Training at home-bro.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/images/illustrations/curiosity child-bro.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/illustrations/curiosity child-bro.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/images/illustrations/travel selfie-bro.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/illustrations/travel selfie-bro.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/images/logo.webp" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/logo.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/images/malick.webp" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/malick.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/images/places/CDG.webp" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/places/CDG.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/images/places/Chamanes.webp" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/places/Chamanes.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/images/places/ESIEA.webp" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/places/ESIEA.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/images/places/Halwar.webp" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/places/Halwar.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/images/places/Kadys.webp" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/places/Kadys.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/images/projects/cappsule.webp" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/projects/cappsule.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/images/projects/chamanes.webp" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/projects/chamanes.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/images/projects/leadercade.webp" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/projects/leadercade.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/images/projects/simplink.webp" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/projects/simplink.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/images/projects/warnit.webp" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/projects/warnit.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/images/skills/android.webp" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/skills/android.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/images/skills/autonomy.webp" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/skills/autonomy.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/images/skills/backend.webp" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/skills/backend.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/images/skills/creativity.webp" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/skills/creativity.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/images/skills/csharp.webp" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/skills/csharp.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/images/skills/dotnet.webp" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/skills/dotnet.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/images/skills/ios.webp" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/skills/ios.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/images/skills/marketing.webp" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/skills/marketing.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/images/skills/planning.webp" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/skills/planning.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/images/skills/teamwork.webp" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/skills/teamwork.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/images/skills/web.webp" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/skills/web.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/images/socials/email.webp" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/socials/email.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/images/socials/github.webp" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/socials/github.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/images/socials/linkedin.webp" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/socials/linkedin.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/texts/components/Footer.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/texts/components/Footer.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/texts/components/Navbar.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/texts/components/Navbar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/texts/main pages/card-pages/Biographie.md" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/_typography.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/texts/main pages/card-pages/Home.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/texts/main pages/card-pages/Home.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/texts/main pages/card-pages/Parcours.md" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/texts/main pages/list-pages/Compétences.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/texts/main pages/card-pages/Biographie.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/texts/main pages/list-pages/Contact.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/texts/main pages/card-pages/Parcours.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/texts/main pages/list-pages/Réalisations.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/texts/main pages/list-pages/Compétences.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/texts/sub pages/compétences/techniques/dotnet.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/texts/main pages/list-pages/Contact.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/texts/sub pages/compétences/techniques/mobile-android.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/texts/main pages/list-pages/Réalisations.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/texts/sub pages/compétences/techniques/mobile-ios.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/texts/sub pages/compétences/techniques/dotnet.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/texts/sub pages/compétences/techniques/web-api.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/texts/sub pages/compétences/techniques/mobile-android.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/texts/sub pages/compétences/techniques/web-back.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/texts/sub pages/compétences/techniques/mobile-ios.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/texts/sub pages/compétences/techniques/web-front.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/texts/sub pages/compétences/techniques/web-api.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/texts/sub pages/compétences/transverses/autonomie.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/texts/sub pages/compétences/techniques/web-back.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/texts/sub pages/compétences/transverses/coopération.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/texts/sub pages/compétences/techniques/web-front.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/texts/sub pages/compétences/transverses/créatvité.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/texts/sub pages/compétences/transverses/autonomie.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/texts/sub pages/compétences/transverses/graphisme.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/texts/sub pages/compétences/transverses/coopération.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/texts/sub pages/compétences/transverses/plannification.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/texts/sub pages/compétences/transverses/créatvité.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/texts/sub pages/compétences/transverses/promotion.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/texts/sub pages/compétences/transverses/graphisme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/texts/sub pages/réalisations/personnelles/Cappsule.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/texts/sub pages/compétences/transverses/plannification.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/texts/sub pages/réalisations/personnelles/LeaderCade.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/texts/sub pages/compétences/transverses/promotion.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/texts/sub pages/réalisations/personnelles/Savanhike.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/texts/sub pages/réalisations/personnelles/Cappsule.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/texts/sub pages/réalisations/professionnelles/SageLink.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/texts/sub pages/réalisations/personnelles/LeaderCade.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/texts/sub pages/réalisations/professionnelles/SimpLink.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/texts/sub pages/réalisations/personnelles/Savanhike.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_assets/texts/sub pages/réalisations/professionnelles/Warnit.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/texts/sub pages/réalisations/professionnelles/SageLink.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2024-03-14-welcome-to-jekyll.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.markdown" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Sass File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -34,19 +130,19 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "JavaScript Debug.Jekyll.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/malic/Projects/malickndiaye.com/assets/images/icons",
+    "last_opened_file_path": "C:/Users/Malick/Projects/malickndiaye.com/_site/index.html",
+    "list.type.of.created.stylesheet": "Sass",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "watcher.settings",
     "timeTracker.activityTracker": "null",
     "timeTracker.comment": "",
     "timeTracker.inactivityPeriodInMills": "600000",
@@ -78,22 +174,23 @@
       <recent name="C:\Users\malic\Projects\malickndiaye.com\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Malick\Projects\malickndiaye.com\_sass" />
+      <recent name="C:\Users\Malick\Projects\malickndiaye.com\_sass\partials" />
+      <recent name="C:\Users\Malick\Projects\malickndiaye.com" />
+      <recent name="C:\Users\Malick\Projects\malickndiaye.com\site\assets" />
       <recent name="C:\Users\malic\Projects\malickndiaye.com" />
-      <recent name="C:\Users\malic\Projects\malickndiaye.com\assets\texts\main pages\list-pages" />
-      <recent name="C:\Users\malic\Projects\malickndiaye.com\assets\texts\main pages\card-pages" />
-      <recent name="C:\Users\malic\Projects\malickndiaye.com\assets\texts\main pages" />
-      <recent name="C:\Users\malic\Projects\malickndiaye.com\assets\texts\components" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.Angular CLI Server">
+  <component name="RunManager" selected="JavaScript Debug.Angular Application">
     <configuration name="Tests (website)" type="JavaScriptTestRunnerKarma">
       <config-file value="$PROJECT_DIR$/karma.conf.js" />
+      <karma-package-dir value="" />
       <working-directory value="$PROJECT_DIR$" />
       <node-interpreter value="project" />
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
+    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4000">
       <method v="2" />
     </configuration>
     <configuration name="Angular CLI Server" type="js.build_tools.npm">
@@ -106,6 +203,11 @@
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.Angular Application" />
+      <item itemvalue="Karma.Tests (website)" />
+      <item itemvalue="npm.Angular CLI Server" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -118,6 +220,9 @@
       <workItem from="1710366709462" duration="5266000" />
       <workItem from="1710418632251" duration="729000" />
       <workItem from="1710419381182" duration="1107000" />
+      <workItem from="1710421144847" duration="258000" />
+      <workItem from="1710421905910" duration="1986000" />
+      <workItem from="1710423910209" duration="4737000" />
     </task>
     <task id="LOCAL-00001" summary="Project setup">
       <option name="closed" value="true" />
@@ -137,6 +242,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

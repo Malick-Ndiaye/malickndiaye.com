@@ -1,3 +1,68 @@
-﻿html {
+﻿@use "variables" as *;
 
+html {
+  a {
+    text-transform: uppercase;
+  }
+
+  button, a {
+    min-height: 48px;
+    min-width: 48px;
+  }
+
+  button {
+    background: none;
+    border: none;
+
+    &.icon {
+      &, img {
+        height: 48px;
+        width: 48px;
+      }
+    }
+  }
+
+  a {
+    align-items: center;
+    border-bottom: 2px solid transparent;
+    box-sizing: border-box;
+    color: $color-foreground;
+    display: flex;
+    text-decoration: none;
+    white-space: nowrap;
+    width: fit-content;
+
+    &:hover, &.active {
+      border-bottom: 2px solid $color-foreground-accent;
+    }
+
+    &.active {
+      cursor: default;
+    }
+    
+    &.cta, &.secondary {
+      padding-inline: space(4);
+    }
+
+    &.cta {
+      background: $color-foreground-accent;
+      color: $color-background;
+
+      &:hover, &.active {
+        background: none;
+        color: $color-foreground;
+      }
+    }
+
+    &.secondary {
+      border: $border-button;
+
+      &:hover, &:active {
+        border-left: $border-button-transparent;
+        border-right: $border-button-transparent;
+        border-top: $border-button-transparent;
+      }
+    }
+  }
 }
+

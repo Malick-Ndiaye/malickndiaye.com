@@ -1,11 +1,12 @@
 ﻿@use "variables" as *;
 
 html {
-  a {
-    text-transform: uppercase;
+  :current(a) {
+    background: red;
   }
 
   button, a {
+    cursor: pointer;
     min-height: 48px;
     min-width: 48px;
   }
@@ -13,12 +14,9 @@ html {
   button {
     background: none;
     border: none;
-
-    &.icon {
-      &, img {
-        height: 48px;
-        width: 48px;
-      }
+    &, img {
+      height: 48px;
+      width: 48px;
     }
   }
 
@@ -29,14 +27,15 @@ html {
     color: $color-foreground;
     display: flex;
     text-decoration: none;
+    text-transform: uppercase;
     white-space: nowrap;
     width: fit-content;
 
-    &:hover, &.active {
+    &:hover, &:active, &.current-page {
       border-bottom: 2px solid $color-foreground-accent;
     }
 
-    &.active {
+    &.current-page {
       cursor: default;
     }
     
@@ -65,4 +64,3 @@ html {
     }
   }
 }
-

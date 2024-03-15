@@ -1,9 +1,7 @@
 $color-background: #ffffff;
-$color-background-accent: #e5e5e5;
 $color-foreground: #4c4c4c;
 $color-foreground-accent: #000000;
 
-$border-separator: 1px solid $color-background-accent;
 $border-button: 2px solid $color-foreground-accent;
 $border-button-transparent: 2px solid transparent;
 
@@ -12,9 +10,11 @@ $spacing-unit: 4px;
 $breakpoint-desktop: 1024px;
 $breakpoint-tablet: 768px;
 
+$size-mobile-padding-horizontal: 16px;
+
 @mixin overlay {
   backdrop-filter: blur(16px);
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.6);
 }
 
 @function space($amount) {

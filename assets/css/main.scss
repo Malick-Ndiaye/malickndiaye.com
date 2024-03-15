@@ -4,3 +4,17 @@
 @import "variables";
 @import "interactables";
 @import "typography";
+
+@import "includes/navbar";
+
+html {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  main {
+    margin-top: 48px;
+  }
+}

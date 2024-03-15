@@ -1,0 +1,55 @@
+﻿@use "../variables" as *;
+
+#navbar {
+  @include overlay;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+
+  #nav-main {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: $size-mobile-padding-horizontal;
+  }
+
+  #nav-list {
+    align-items: center;
+    display: none;
+    flex-direction: column;
+    gap: space(8);
+    height: calc(100svh - 48px);
+    justify-content: center;
+    padding-inline: $size-mobile-padding-horizontal;
+  }
+
+  &:has(#menu-toggle[aria-expanded="true"]) #nav-list {
+    display: flex;
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  #navbar {
+    display: flex;
+    flex-direction: row;
+
+    #nav-main {
+      width: fit-content;
+
+      #menu-toggle {
+        display: none;
+      }
+    }
+
+    #nav-list {
+      display: flex;
+      flex-direction: row;
+      height: fit-content;
+      width: 100%;
+
+      li:first-child, li:last-child {
+        margin-left: auto;
+      }
+    }
+  }
+}

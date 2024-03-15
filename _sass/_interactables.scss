@@ -11,6 +11,13 @@ html {
     min-width: 48px;
   }
 
+  footer {
+    button, a:not(.cta, .secondary) {
+      min-height: 32px;
+      min-width: 32px;
+    }
+  }
+
   button {
     background: none;
     border: none;

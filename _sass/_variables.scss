@@ -1,6 +1,10 @@
-$color-background: #ffffff;
-$color-foreground: #4c4c4c;
+$color-background: #FFFFFF;
+$color-background-accent: #CCCCCC;
+
+$color-foreground: #333333;
 $color-foreground-accent: #000000;
+
+$border-separator: 1px solid $color-background-accent;
 
 $border-button: 2px solid $color-foreground-accent;
 $border-button-transparent: 2px solid transparent;
@@ -11,6 +15,7 @@ $breakpoint-desktop: 1024px;
 $breakpoint-tablet: 768px;
 
 $size-mobile-padding-horizontal: 16px;
+$size-desktop-max-width: 1200px;
 
 @mixin overlay {
   backdrop-filter: blur(16px);

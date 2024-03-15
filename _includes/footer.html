@@ -1,0 +1,52 @@
+﻿<footer id="footer">
+    <div id="footer-container">
+        <section>
+            <h2>
+                {{ site.title }}
+            </h2>
+            <p>
+                {{ site.description }}
+            </p>
+            <a class="cta" href="/contact.html">
+                Me contacter
+            </a>
+        </section>
+        <section>
+            <h2>
+                Menu
+            </h2>
+            <nav>
+                <ul>
+                    <li><a href="">{{ site.title }}</a></li>
+                    {% for link in site.data.nav_links %}
+                    <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </nav>
+        </section>
+        <section>
+            <h2>
+                Contact
+            </h2>
+            <ul>
+                {% for page in site.data.contact_links %}
+                <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </section>
+        <section>
+            <h2>
+                Droits
+            </h2>
+            <ul>
+                <li>
+                    <a href="/credits.html">Crédits</a>
+                </li>
+                <li>
+                    <a href="/licence.html">Licence</a>
+                </li>
+            </ul>
+            <p>Copyright Malick Ndiaye 2024</p>
+        </section>
+    </div>
+</footer>

@@ -1,0 +1,46 @@
+﻿@use "../variables" as *;
+
+#footer {
+  border-top: $border-separator;
+  padding-block: space(8);
+  padding-inline: $size-mobile-padding-horizontal;
+
+  #footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: space(8);
+
+    section {
+      display: flex;
+      flex-direction: column;
+      gap: space(4);
+
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: space(4);
+      }
+    }
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  #footer {
+    padding-inline: 0;
+
+    #footer-container {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-inline: auto;
+      max-width: $size-desktop-max-width;
+
+      section {
+        max-width: 30%;
+
+        ul {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}

@@ -6,15 +6,39 @@
 @import "typography";
 
 @import "includes/navbar";
+@import "includes/footer";
 
 html {
+  height: 100%;
+
   * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
 
-  main {
-    margin-top: 48px;
+  body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    main {
+      height: 100%;
+      margin-top: 48px;
+      padding-inline: $size-mobile-padding-horizontal;
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  html {
+    body {
+      main {
+        max-width: $size-desktop-max-width;
+        margin-inline: auto;
+        padding-inline: 0;
+      }
+    }
   }
 }

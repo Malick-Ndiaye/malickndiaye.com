@@ -1,26 +1,28 @@
 ﻿<script src="{{ site.baseurl }}/assets/js/navbar.js"></script>
 <nav id="navbar">
-    <div id="nav-main">
-        <a href="/" {% if page.url == "/" %} class="current-page" {% endif %}>Malick Ndiaye</a>
-        <button id="menu-toggle" aria-controls="nav-menu" aria-expanded="false" onclick="toggleMenu()">
-            <img src="../assets/images/icons/menu.png" alt="Icône menu burger"/>
-        </button>
+    <div id="navbar-wrapper">
+        <div id="nav-main">
+            <a href="/" {% if page.url == "/" %} class="current-page" {% endif %}>Malick Ndiaye</a>
+            <button id="menu-toggle" aria-controls="nav-menu" aria-expanded="false" onclick="toggleMenu()">
+                <img src="../assets/images/icons/menu.png" alt="Icône menu burger"/>
+            </button>
+        </div>
+        <ul id="nav-list">
+            {% for link in site.data.nav_links %}
+            {% if link.url == page.url %}
+            {% if forloop.last %}
+            <li><a href="{{ link.url }}" class="current-page secondary">{{ link.title }}</a></li>
+            {% else %}
+            <li><a href="{{ link.url }}" class="current-page">{{ link.title }}</a></li>
+            {% endif %}
+            {% else %}
+            {% if forloop.last %}
+            <li><a href="{{ link.url }}" class="cta">{{ link.title }}</a></li>
+            {% else %}
+            <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+            {% endif %}
+            {% endif %}
+            {% endfor %}
+        </ul>
     </div>
-    <ul id="nav-list">
-        {% for link in site.data.nav_pages %}
-        {% if link.url == page.url %}
-        {% if forloop.last %}
-        <li><a href="{{ link.url }}" class="current-page secondary">{{ link.title }}</a></li>
-        {% else %}
-        <li><a href="{{ link.url }}" class="current-page">{{ link.title }}</a></li>
-        {% endif %}
-        {% else %}
-        {% if forloop.last %}
-        <li><a href="{{ link.url }}" class="cta">{{ link.title }}</a></li>
-        {% else %}
-        <li><a href="{{ link.url }}">{{ link.title }}</a></li>
-        {% endif %}
-        {% endif %}
-        {% endfor %}
-    </ul>
 </nav>

@@ -2,6 +2,9 @@
 
 #navbar {
   @include overlay;
+  border-bottom: $border-separator;
+  box-shadow: 0 0 16px 8px rgba(204,204,204,0.5);
+  padding-inline: $size-mobile-padding-horizontal;
   position: fixed;
   top: 0;
   width: 100%;
@@ -10,7 +13,6 @@
   #nav-main {
     display: flex;
     justify-content: space-between;
-    padding-inline: $size-mobile-padding-horizontal;
   }
 
   #nav-list {
@@ -20,7 +22,6 @@
     gap: space(8);
     height: calc(100svh - 48px);
     justify-content: center;
-    padding-inline: $size-mobile-padding-horizontal;
   }
 
   &:has(#menu-toggle[aria-expanded="true"]) #nav-list {
@@ -30,8 +31,13 @@
 
 @media (min-width: $breakpoint-desktop) {
   #navbar {
-    display: flex;
-    flex-direction: row;
+    #navbar-wrapper {
+      display: flex;
+      flex-direction: row;
+      margin-inline: auto;
+      max-width: $size-desktop-max-width;
+      padding-inline: 0;
+    }
 
     #nav-main {
       width: fit-content;

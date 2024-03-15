@@ -4,11 +4,11 @@
 
 ## Infos
 
+![logo.webp](..%2F..%2Fimages%2Flogo.webp)
+
 Portfolio de Malick Ndiaye, ingénieur logiciel. Développé avec Jekyll, il est conçu pour me présenter professionnellement.
 
-[CV](#)
-
-[Projet Git](#)
+[Projet Git](https://github.com/ModernMalick/malickndiaye.com)
 
 ---
 

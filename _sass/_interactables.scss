@@ -11,13 +11,6 @@ html {
     min-width: 48px;
   }
 
-  footer {
-    button, a:not(.cta, .secondary) {
-      min-height: 32px;
-      min-width: 32px;
-    }
-  }
-
   button {
     background: none;
     border: none;
@@ -29,7 +22,7 @@ html {
 
   a {
     align-items: center;
-    border-bottom: 2px solid transparent;
+    border-block: 2px solid transparent;
     box-sizing: border-box;
     color: $color-foreground;
     display: flex;

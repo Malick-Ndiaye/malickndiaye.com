@@ -4,7 +4,6 @@
   @include overlay;
   border-bottom: $border-separator;
   box-shadow: 0 0 16px 8px rgba(204,204,204,0.5);
-  padding-inline: $size-mobile-padding-horizontal;
   position: fixed;
   top: 0;
   width: 100%;
@@ -13,6 +12,11 @@
   #nav-main {
     display: flex;
     justify-content: space-between;
+
+    a {
+      font-family: 'Taviraj', serif;
+      font-weight: 700;
+    }
   }
 
   #nav-list {
@@ -31,12 +35,12 @@
 
 @media (min-width: $breakpoint-desktop) {
   #navbar {
-    #navbar-wrapper {
+    display: flex;
+    justify-content: center;
+
+    .main-wrapper {
       display: flex;
       flex-direction: row;
-      margin-inline: auto;
-      max-width: $size-desktop-max-width;
-      padding-inline: 0;
 
       &, li, a {
         height: 64px;

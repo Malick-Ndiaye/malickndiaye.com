@@ -1,52 +1,55 @@
 ﻿<footer id="footer">
-    <div id="footer-container">
-        <section>
-            <h2>
-                {{ site.title }}
-            </h2>
-            <p>
-                {{ site.description }}
-            </p>
-            <a class="cta" href="/contact.html">
-                Me contacter
-            </a>
-        </section>
-        <section>
-            <h2>
-                Menu
-            </h2>
-            <nav>
+    <div class="main-wrapper">
+        <div id="footer-top">
+            <section>
+                <h2>
+                    {{ site.title }}
+                </h2>
+                <p>
+                    {{ site.description }}
+                </p>
+                <a class="cta" href="/contact.html">
+                    Me Recruter
+                </a>
+            </section>
+            <section>
+                <h2>Compétences</h2>
                 <ul>
-                    <li><a href="">{{ site.title }}</a></li>
-                    {% for link in site.data.nav_links %}
-                    <li><a href="{{ link.url }}">{{ link.title }}</a></li>
-                    {% endfor %}
+                    <li><a href="front-end.html">Front-End</a></li>
+                    <li><a href="back-end.html">Back-end</a></li>
+                    <li><a href="android.html">Android</a></li>
                 </ul>
-            </nav>
-        </section>
-        <section>
-            <h2>
-                Contact
-            </h2>
-            <ul>
-                {% for page in site.data.contact_links %}
-                <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-                {% endfor %}
-            </ul>
-        </section>
-        <section>
-            <h2>
-                Droits
-            </h2>
-            <ul>
-                <li>
-                    <a href="/credits.html">Crédits</a>
-                </li>
-                <li>
-                    <a href="/licence.html">Licence</a>
-                </li>
-            </ul>
+            </section>
+            <section>
+                <h2>Réalisations</h2>
+                <ul>
+                    <li><a href="sagelink.html">SageLink</a></li>
+                    <li><a href="warnit.html">Warnit</a></li>
+                    <li><a href="savanhike.html">Savanhike</a></li>
+                </ul>
+            </section>
+            <section>
+                <h2>
+                    Contact
+                </h2>
+                <ul>
+                    <li>
+                        <img src="../assets/images/icons/mail.svg" alt="Enveloppe, représentant un e-mail"/>
+                        <p>malick1ndiaye0@gmail.com</p>
+                    </li>
+                    <li>
+                        <img src="../assets/images/icons/place.svg" alt="Pin, représentant un emplacement"/>
+                        <p>Montauban, France</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <section id="footer-legal">
             <p>Copyright Malick Ndiaye 2024</p>
+            |
+            <a href="/credits.html">Crédits</a>
+            |
+            <a href="/licence.html">Licence</a>
         </section>
     </div>
 </footer>

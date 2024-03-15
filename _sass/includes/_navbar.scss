@@ -37,6 +37,10 @@
       margin-inline: auto;
       max-width: $size-desktop-max-width;
       padding-inline: 0;
+
+      &, li, a {
+        height: 64px;
+      }
     }
 
     #nav-main {

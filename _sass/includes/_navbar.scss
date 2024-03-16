@@ -2,8 +2,7 @@
 
 #navbar {
   @include overlay;
-  border-bottom: $border-separator;
-  box-shadow: 0 0 16px 8px rgba(204,204,204,0.5);
+  box-shadow: $box-shadow;
   position: fixed;
   top: 0;
   width: 100%;

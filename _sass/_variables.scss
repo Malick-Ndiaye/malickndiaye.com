@@ -1,13 +1,13 @@
 $color-background: #FFFFFF;
-$color-background-accent: #CCCCCC;
+$color-background-accent: #f2f2f2;
 
 $color-foreground: #333333;
 $color-foreground-accent: #000000;
 
-$border-separator: 1px solid $color-background-accent;
+$border-separator: 2px solid $color-background-accent;
 
-$border-button: 2px solid $color-foreground-accent;
-$border-button-transparent: 2px solid transparent;
+$border-button: 1px solid $color-foreground-accent;
+$border-button-transparent: 1px solid transparent;
 
 $spacing-unit: 4px;
 
@@ -16,6 +16,8 @@ $breakpoint-tablet: 768px;
 
 $size-mobile-padding-horizontal: 16px;
 $size-desktop-max-width: 1200px;
+
+$box-shadow: 0 0 16px 8px rgba(204,204,204,0.5);
 
 @mixin overlay {
   backdrop-filter: blur(16px);

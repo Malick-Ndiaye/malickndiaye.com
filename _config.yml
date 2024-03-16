@@ -4,4 +4,5 @@ description: >-
 domain: modern-malick.com
 url: https://modern-malick.com
 baseurl: ""
+destination: docs/
   

@@ -7,7 +7,7 @@
   padding-top: space(8);
   width: 100%;
 
-  .main-wrapper {
+  .boundaries-wrapper {
     display: flex;
     flex-direction: column;
     gap: space(4);
@@ -57,7 +57,7 @@
 
 @media (min-width: $breakpoint-desktop) {
   #footer {
-    .main-wrapper {
+    .boundaries-wrapper {
       #footer-top {
         flex-direction: row;
         justify-content: space-between;

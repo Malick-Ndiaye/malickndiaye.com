@@ -278,7 +278,7 @@
             align-items: center;
             display: grid;
             column-gap: space(8);
-            max-width: 50%;
+            max-width: calc(50% - 32px);
             row-gap: space(4);
             
             img {
@@ -444,6 +444,11 @@
       
       &.timeline {
         align-items: center;
+        justify-content: space-between;
+        
+        & > * {
+          max-width: 512px;
+        }
         
         &:nth-of-type(odd) {
           flex-direction: row-reverse;

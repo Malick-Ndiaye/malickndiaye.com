@@ -1,7 +1,7 @@
 title: Malick Ndiaye
 description: >-
-  Découvrez le portfolio de Malick Ndiaye, un ingénieur logiciel passionné. Conçu avec Jekyll, ce portfolio offre une présentation professionnelle mettant en lumière mes compétences et mes projets. Vous y trouverez également la possibilité de me contacter pour toute collaboration potentielle.
+  Portfolio de Malick Ndiaye, développeur Full-Stack spécialisé en applications web, mobile et windows. Je suis prêt à transformer vos défis en succés. Conçu avec Jekyll, ce portfolio offre une présentation professionnelle mettant en lumière mes compétences et mes projets. Vous y trouverez également la possibilité de me contacter pour toute collaboration potentielle.
 domain: modern-malick.com
 url: https://modern-malick.com/
 permalink: pretty
-  
+excerpt_separator: <!-- end-excerpt -->

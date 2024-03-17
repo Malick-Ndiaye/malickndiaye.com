@@ -1,26 +1,30 @@
 ---
 layout: default
 title: "Biographie"
+subtitle: "De la passion à l'expertise"
+introduction: "Originaire du Sénégal, ma passion pour les technologies m'a mené à l'ESIEA, une école d'ingénierie en
+France, où j'ai cultivé mon expertise en ingénierie logiciel. Mon parcours est marqué par une quête incessante d'excellence, débutant dès mon Baccalauréat Scientifique et continuant à travers une
+alternance significative et des stages enrichissants dans le domaine du développement d'applications
+web, mobiles et windows."
+img-src: "illustrations/Profile data-bro.svg"
+img-alt: "Illustration d'un homme montrant un profil professionnel."
 ---
 
 <div class="boundaries-wrapper presentation-page-container">
     <section class="reverse" id="hero">
-        <img alt="Illustration d'un homme montrant un profil professionnel."
-             src="{{site.baseurl}}/assets/images/illustrations/Profile data-bro.svg"/>
+        <img alt="{{page.img-alt}}"
+             src="{{site.baseurl}}/assets/images/{{page.img-src}}"/>
         <div id="hero-content">
             <header>
                 <h1>
-                    Biographie
+                    {{ page.title }}
                 </h1>
                 <p class="h1-subtitle">
-                    De la passion à l'expertise
+                    {{ page.subtitle }}
                 </p>
             </header>
             <p>
-                Originaire du Sénégal, ma passion pour les technologies m'a mené à l'ESIEA, une école d'ingénierie en
-                France, où j'ai cultivé mon expertise en ingénierie logiciel. Mon <a href="/parcours">Parcours</a>  est marqué par une quête incessante d'excellence, débutant dès mon Baccalauréat Scientifique et continuant à travers une
-                alternance significative et des stages enrichissants dans le domaine du développement d'applications
-                web, mobiles et windows.
+                {{ page.introduction }}
             </p>
         </div>
     </section>

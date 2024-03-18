@@ -19,6 +19,10 @@ $size-desktop-max-width: 1200px;
 
 $box-shadow: 0 0 16px 8px rgba(204,204,204,0.5);
 
+$pattern-herringbone: url("../images/backgrounds/herringbone.svg");
+
+$pattern-memphis: url("../images/backgrounds/memphis.svg");
+
 @mixin overlay {
   backdrop-filter: blur(16px);
   background: rgba(255, 255, 255, 0.6);

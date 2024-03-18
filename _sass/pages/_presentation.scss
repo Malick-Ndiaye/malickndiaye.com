@@ -171,39 +171,18 @@
       position: relative;
       text-align: center;
       width: 100%;
-      
-      img {
-        filter: brightness(0.4);
-        gap: space(4);
-        height: 100%;
-        object-fit: cover;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        z-index: -1;
-      }
 
-      header {
-        background-color: rgba(0, 0, 0, 0.4);
-        width: 100%;
+      &.herringbone {
+        background: $pattern-herringbone;
       }
       
-      p, a, h1, h2 {
-        color: $color-background;
+      header {
+        border: 0;
+        width: 100%;
       }
       
       p {
         margin-inline: space(4);
-      }
-      
-      a.secondary {
-        border: 1px solid $color-background;
-        
-        &:hover {
-          border-bottom: 1px solid $color-background;
-          border-inline: 0;
-          border-top: 0;
-        }
       }
     }
   }
@@ -214,18 +193,20 @@
     #hero {
       align-items: center;
       flex-direction: row-reverse;
+      gap: space(16);
       justify-content: space-between;
+      
+      .img-container {
+        width: 100%;
+      }
       
       &.reverse {
        flex-direction: row; 
       }
-
-      #hero-content, img {
-        max-width: 512px;
-      }
       
       #hero-content {
         gap: space(8);
+        width: 100%;
 
         &.centered {
           align-items: start;
@@ -327,11 +308,11 @@
           grid-row: 1;
         }
         
-        video {
+        .img-container {
+          background: $pattern-memphis;
           grid-column: 1;
           grid-row: 2;
           height: 100%;
-          object-fit: cover;
           width: 100%;
         }
         
@@ -384,9 +365,9 @@
       }
 
       &.excerpt.two-col {
-        column-gap: 144px;
+        column-gap: space(16);
         display: grid;
-        grid-template-columns: auto 512px;
+        grid-template-columns: 1fr 1fr;
         row-gap: 0;
 
         header {
@@ -446,10 +427,6 @@
         align-items: center;
         justify-content: space-between;
         
-        & > * {
-          max-width: 512px;
-        }
-        
         &:nth-of-type(odd) {
           flex-direction: row-reverse;
         }
@@ -472,6 +449,14 @@
               color: $color-background;
             }
           }
+        }
+        
+        a {
+          aspect-ratio: 1 / 1;
+        }
+        
+        a, img, .articles {
+          width: 100%;
         }
       }
     }

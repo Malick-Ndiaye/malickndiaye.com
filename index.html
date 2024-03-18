@@ -5,8 +5,10 @@ title: "Accueil"
 
 <div class="boundaries-wrapper presentation-page-container">
     <section id="hero">
-    <img src="assets/images/malick.webp" alt="Portrait professionnel de Malick Ndiaye, ingénieur logiciel."/>
-    <div id="hero-content" class="centered">
+        <div class="img-container">
+            <img src="assets/images/malick.webp" alt="Portrait professionnel de Malick Ndiaye, ingénieur logiciel."/>
+        </div>
+        <div id="hero-content" class="centered">
         <header>
             <h1>
                 Malick Ndiaye
@@ -39,7 +41,7 @@ title: "Accueil"
             </section>
         {% endif %}
         {% if page.title == "Parcours" %}
-            <section id="parcours" class="overlayed">
+            <section id="parcours" class="overlayed herringbone">
                 <header>
                     <h1>
                         {{page.title}}
@@ -51,7 +53,6 @@ title: "Accueil"
                 <p>
                     {{page.introduction}}
                 </p>
-                <img src="{{site.baseurl}}/assets/images/{{page.img-src}}" alt="{{page.img-alt}}"/>
                 <a href="{{page.url}}" class="secondary">En savoir plus</a>
             </section>
         {% endif %}

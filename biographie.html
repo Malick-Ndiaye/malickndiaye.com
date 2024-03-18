@@ -12,8 +12,10 @@ img-alt: "Illustration d'un homme montrant un profil professionnel."
 
 <div class="boundaries-wrapper presentation-page-container">
     <section class="reverse" id="hero">
-        <img alt="{{page.img-alt}}"
-             src="{{site.baseurl}}/assets/images/{{page.img-src}}"/>
+        <div class="img-container">
+            <img alt="{{page.img-alt}}"
+                 src="{{site.baseurl}}/assets/images/{{page.img-src}}"/>
+        </div>
         <div id="hero-content">
             <header>
                 <h1>
@@ -196,9 +198,8 @@ img-alt: "Illustration d'un homme montrant un profil professionnel."
                 Sources de créativité et d'équilibre
             </p>
         </header>
-        <video autoplay muted loop>
-            <source src="{{site.baseurl}}/assets/videos/horizon.mp4" type="video/mp4">
-        </video>
+        <div class="img-container">
+        </div>
         <div class="articles three-col">
             <article>
                 <header>

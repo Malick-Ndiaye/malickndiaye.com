@@ -166,7 +166,7 @@
       align-items: center;
       display: flex;
       flex-direction: column;
-      gap: space(4);
+      gap: space(8);
       padding-block: space(8);
       position: relative;
       text-align: center;
@@ -178,6 +178,7 @@
       
       header {
         border: 0;
+        padding-block: 0;
         width: 100%;
       }
       
@@ -458,6 +459,10 @@
         a, img, .articles {
           width: 100%;
         }
+      }
+      
+      &.overlayed {
+        padding-block: space(8);
       }
     }
   }

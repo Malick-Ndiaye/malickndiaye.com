@@ -10,11 +10,7 @@
         <ul id="nav-list">
             {% for link in site.data.nav_links %}
             {% if link.url == page.url %}
-            {% if forloop.last %}
-            <li><a href="{{ link.url }}" class="current-page secondary">{{ link.title }}</a></li>
-            {% else %}
             <li><a href="{{ link.url }}" class="current-page">{{ link.title }}</a></li>
-            {% endif %}
             {% else %}
             {% if forloop.last %}
             <li><a href="{{ link.url }}" class="cta">{{ link.title }}</a></li>

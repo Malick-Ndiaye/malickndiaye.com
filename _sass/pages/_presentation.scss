@@ -12,6 +12,7 @@
 
     .img-container {
       display: flex;
+      width: 100%;
     }
     
     #hero-content {
@@ -90,7 +91,7 @@
       }
     }
     
-    &.excerpt {
+    &#biographie {
       display: block;
       
       header {
@@ -161,7 +162,7 @@
       }
     }
     
-    &.overlayed {
+    &#parcours {
       align-items: center;
       display: flex;
       flex-direction: column;
@@ -183,6 +184,19 @@
       
       p {
         margin-inline: space(4);
+      }
+    }
+    
+    &#contact {
+      gap: space(8);
+      
+      header {
+        gap: space(4);
+      }
+      
+      a {
+        justify-content: center;
+        width: 100%;
       }
     }
   }
@@ -360,7 +374,7 @@
         }
       }
 
-      &.excerpt.two-col {
+      &#biographie.two-col {
         column-gap: space(16);
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -456,8 +470,21 @@
         }
       }
       
-      &.overlayed {
+      &#parcours {
         padding-block: space(8);
+      }
+      
+      &#contact {
+        align-items: center;
+        
+        header {
+          width: 100%;
+        }
+
+        .contact-card, a.secondary {
+          max-width: 50%;
+          width: 100%;
+        }
       }
     }
   }

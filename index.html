@@ -28,33 +28,46 @@ title: "Accueil"
     </div>
     </section>
 
-    {% for page in site.pages %}
-        {% if page.title == "Biographie" %}
-            <section id="biographie" class="excerpt two-col">
-                <header>
-                    <h2>{{page.title}}</h2>
-                    <p class="h2-subtitle">{{page.subtitle}}</p>
-                </header>
-                <img height="512" width="512" alt="{{page.img-alt}}" src="{{site.baseurl}}/assets/images/{{page.img-src}}"/>
-                <p> {{page.introduction}} </p>
-                <a href="{{page.url}}" class="secondary">En savoir plus</a>
-            </section>
-        {% endif %}
-        {% if page.title == "Parcours" %}
-            <section id="parcours" class="overlayed herringbone">
-                <header>
-                    <h1>
-                        {{page.title}}
-                    </h1>
-                    <p class="h1-subtitle">
-                        {{page.subtitle}}
-                    </p>
-                </header>
-                <p>
-                    {{page.introduction}}
+    {% assign pageTitle = "Biographie" %}
+    {% assign pageData = site.pages | where: "title", pageTitle | first %}
+    {% if pageData %}
+        <section id="biographie" class="two-col">
+            <header>
+                <h2>{{pageData.title}}</h2>
+                <p class="h2-subtitle">{{pageData.subtitle}}</p>
+            </header>
+            <img height="512" width="512" alt="{{page.img-alt}}" src="{{site.baseurl}}/assets/images/{{pageData.img-src}}"/>
+            <p> {{pageData.introduction}} </p>
+            <a href="{{pageData.url}}" class="secondary">En savoir plus</a>
+        </section>
+    {% endif %}
+
+    {% assign pageTitle = "Parcours" %}
+    {% assign pageData = site.pages | where: "title", pageTitle | first %}
+    {% if pageData %}
+        <section id="parcours" class="herringbone">
+            <header>
+                <h1>
+                    {{pageData.title}}
+                </h1>
+                <p class="h1-subtitle">
+                    {{pageData.subtitle}}
                 </p>
-                <a href="{{page.url}}" class="secondary">En savoir plus</a>
-            </section>
-        {% endif %}
-    {% endfor %}
+            </header>
+            <p>
+                {{pageData.introduction}}
+            </p>
+            <a href="{{pageData.url}}" class="secondary">En savoir plus</a>
+        </section>
+    {% endif %}
+    
+    {% assign pageTitle = "Contact" %}
+    {% assign pageData = site.pages | where: "title", pageTitle | first %}
+    {% if pageData %}
+        <section id="contact">
+            {{ pageData.excerpt }}
+            <a href="/contact" class="secondary">Autres réseaux</a>
+        </section>
+    {% endif %}
+
 </div>

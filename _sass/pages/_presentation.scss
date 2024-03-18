@@ -10,8 +10,8 @@
     flex-direction: column;
     gap: space(4);
 
-    img {
-      width: 100%;
+    .img-container {
+      display: flex;
     }
     
     #hero-content {
@@ -195,10 +195,6 @@
       flex-direction: row-reverse;
       gap: space(16);
       justify-content: space-between;
-      
-      .img-container {
-        width: 100%;
-      }
       
       &.reverse {
        flex-direction: row; 

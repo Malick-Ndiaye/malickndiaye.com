@@ -1,0 +1,27 @@
+﻿@use "../variables" as *;
+
+.post-page-container {
+  
+  p {
+    margin-top: space(4);
+    max-width: unset;
+  }
+  
+  h2, h3 {
+    width: fit-content;
+  }
+  
+  h1 {
+    border-block: $border-separator;
+    padding-block: space(4);
+    text-align: center;
+  }
+  
+  h2 {
+    margin-top: space(16);
+  }
+  
+  h3 {
+    margin-top: space(8);
+  }
+}

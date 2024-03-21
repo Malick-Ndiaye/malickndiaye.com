@@ -263,8 +263,11 @@
 
         img {
           border: 0;
-          filter: grayscale(1);
           width: 50%;
+
+          &:not(.color){
+            filter: grayscale(1);
+          }
         }
 
         .texts {

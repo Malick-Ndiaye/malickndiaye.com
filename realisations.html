@@ -1,0 +1,34 @@
+---
+layout: list
+title: "Réalisations"
+---
+
+<header class="header">
+    <h1 >
+        Réalisations
+    </h1>
+    <p class="h1-subtitle">
+        Mes contributions et projets
+    </p>
+</header>
+
+<section class="section">
+    <div class="skill-grid">
+        {% for post in site.categories.realisations %}
+        <article>
+            <img class="color" height="512" width="512" src="{{ post.img }}" alt="Logo du projet {{ post.title }}"/>
+            <h3>{{post.title}}</h3>
+            <div class="texts">
+                {% assign excerpt = post.content | split: "<!-- BEGIN_EXCERPT -->" | last | split: "<!-- END_EXCERPT -->" | first | strip_html %}
+                {% if excerpt %}
+                <details>
+                    <summary>Description</summary>
+                    <p>{{ excerpt }}</p>
+                </details>
+                {% endif %}
+                <a class="secondary" href="{{ post.url }}">En savoir plus</a>
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+</section>

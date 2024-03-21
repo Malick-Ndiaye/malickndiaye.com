@@ -1,12 +1,15 @@
 ﻿---
 layout: post
 title:  "Coopération"
-permalink: "/coopération"
+tags: confirmé
+img: "/assets/images/skills/teamwork.webp"
 ---
 
 # Coopération
 
+<!-- BEGIN_EXCERPT -->
 La coopération, une compétence clé dans mon parcours, me permet de m'intégrer harmonieusement à diverses équipes. Guidé par ma curiosité et mon ouverture d'esprit, j'apporte mes compétences tout en apprenant des autres.
+<!-- END_EXCERPT -->
 
 ## Contexte
 

@@ -1,12 +1,15 @@
 ﻿---
 layout: post
 title:  "Autonomie"
-permalink: "/autonomie"
+tags: avancé
+img: "/assets/images/skills/autonomy.webp"
 ---
 
 # Autonomie
 
+<!-- BEGIN_EXCERPT -->
 L’autonomie est une qualité fondamentale dans ma palette de compétences, me permettant de naviguer efficacement à travers les défis variés des projets personnels et professionnels. Elle symbolise ma capacité à prendre des initiatives, à gérer mon temps et à résoudre des problèmes de manière proactive, souvent sans directive extérieure.
+<!-- END_EXCERPT -->
 
 ## Contexte
 

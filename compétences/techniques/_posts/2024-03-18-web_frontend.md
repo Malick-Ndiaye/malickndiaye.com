@@ -1,12 +1,15 @@
 ﻿---
 layout: post
-title:  "Développement Web - Front-End"
-permalink: "/web_frontend"
+title:  "Développement Web (Front-End)"
+tags: avancé web
+img: "/assets/images/skills/web-front.webp"
 ---
 
-# Développement Web - Front-End
+# Développement Web (Front-End)
 
+<!-- BEGIN_EXCERPT -->
 Le développement web constitue un pilier essentiel de l'ingénierie logicielle, englobant la conception d'interfaces utilisateur interactives et de systèmes web robustes. Cette compétence repose sur un large éventail de technologies et de pratiques, allant de la création frontale à la gestion des bases de données, en passant par l'intégration de CMS comme WordPress.
+<!-- END_EXCERPT -->
 
 ## Contexte
 

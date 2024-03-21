@@ -1,12 +1,15 @@
 ﻿---
 layout: post
 title:  "Android"
-permalink: "/mobile_android"
+tags: avancé mobile
+img: "/assets/images/skills/android.webp"
 ---
 
 # Développement Android
 
+<!-- BEGIN_EXCERPT -->
 Dans le paysage technologique actuel, les smartphones sont devenus des compagnons indispensables pour la plupart des individus, qu'il s'agisse de la gestion de tâches quotidiennes, de divertissement ou de communication. Android, développé par Google, constitue l'un des principaux systèmes d'exploitation mobiles, offrant une plateforme robuste pour la création d'applications répondant aux besoins variés des utilisateurs. Le développement d'applications Android implique l'utilisation de langages de programmation tels que Java et Kotlin, et nécessite une compréhension approfondie des spécificités de ce système d'exploitation en constante évolution.
+<!-- END_EXCERPT -->
 
 ## Contexte
 

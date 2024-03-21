@@ -63,4 +63,16 @@ html {
       }
     }
   }
+
+  details {
+    & > * {
+      margin-bottom: space(4);
+    }
+
+    summary {
+      cursor: pointer;
+      font-size: 1.6rem;
+      text-transform: uppercase;
+    }
+  }
 }

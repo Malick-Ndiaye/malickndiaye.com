@@ -1,12 +1,15 @@
 ﻿---
 layout: post
 title:  "Promotion"
-permalink: "/promotion"
+tags: initié
+img: "/assets/images/skills/marketing.webp"
 ---
 
 # Promotion
 
+<!-- BEGIN_EXCERPT -->
 La promotion est un élément crucial dans la vente de produits ou de services, impliquant des stratégies visant à attirer, convaincre et fidéliser les clients. Il englobe un large éventail d'activités, telles que la recherche de marché, la publicité, la communication et la gestion de la relation client.
+<!-- END_EXCERPT -->
 
 ## Contexte
 En ingénierie logicielle, la promotion joue un rôle essentiel dans la commercialisation des solutions aux clients. Il permet de mettre en valeur les produits ou services développés, de les positionner sur le marché et de susciter l'intérêt des utilisateurs potentiels. Une bonne stratégie marketing peut contribuer à la réussite d'un projet en assurant sa visibilité et en répondant aux besoins des clients de manière efficace.

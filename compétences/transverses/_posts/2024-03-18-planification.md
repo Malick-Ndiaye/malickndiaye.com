@@ -1,12 +1,15 @@
 ﻿---
 layout: post
 title:  "Planification"
-permalink: "/planification"
+tags: confirmé
+img: "/assets/images/skills/planning.webp"
 ---
 
 # Planification
 
+<!-- BEGIN_EXCERPT -->
 La planification joue un rôle crucial dans la réussite de tout projet, qu'il soit académique, personnel ou professionnel. C'est un processus qui consiste à définir les objectifs, à établir un calendrier réaliste et à allouer efficacement les ressources pour atteindre ces objectifs dans les délais impartis.
+<!-- END_EXCERPT -->
 
 ## Contexte
 

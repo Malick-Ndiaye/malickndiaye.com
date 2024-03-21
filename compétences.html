@@ -1,0 +1,95 @@
+---
+layout: list
+title: "Compétences"
+---
+
+<header class="header">
+    <h1 >
+        Compétences
+    </h1>
+    <p class="h1-subtitle">
+        Mes specialités
+    </p>
+</header>
+
+<details>
+    <summary>Système de notation</summary>
+    <div class="grid">
+        <div>
+            <p>
+                <b>
+                    Initié
+                </b>
+            </p>
+            <p>
+                Une compétence utilisée personnellement avec une certaine familiarité, mais parfois nécessitant de l'aide ou des références pour des tâches plus complexes.
+            </p>
+        </div>
+        <div>
+            <p>
+                <b>
+                    Confirmé
+                </b>
+            </p>
+            <p>
+                Une compétence utilisée personnellement et académiquement avec une maîtrise suffisante pour accomplir des tâches de niveau intermédiaire sans supervision constante.
+            </p>
+        </div>
+        <div>
+            <p>
+                <b>
+                    Avancé
+                </b>
+            </p>
+            <p>
+                Une compétence utilisée professionnellement sans supervision directe, démontrant une expertise approfondie et une capacité à résoudre des problèmes complexes de manière autonome.
+            </p>
+        </div>
+    </div>
+</details>
+
+<section class="section">
+    <h2>Techniques</h2>
+    <div class="skill-grid">
+        {% for post in site.categories.techniques %}
+        <article>
+            <img height="512" width="512" src="{{ post.img }}" alt="Icône représentant la compétence {{ post.title }}"/>
+            <h3>{{post.title}}</h3>
+            <div class="texts">
+                <p class="tag">{{ post.tags[0] }}</p>
+                {% assign excerpt = post.content | split: "<!-- BEGIN_EXCERPT -->" | last | split: "<!-- END_EXCERPT -->" | first | strip_html %}
+                {% if excerpt %}
+                <details>
+                    <summary>Description</summary>
+                    <p>{{ excerpt }}</p>
+                </details>
+                {% endif %}
+                <a class="secondary" href="{{ post.url }}">En savoir plus</a>
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+</section>
+
+<section class="section">
+    <h2>Transverses</h2>
+    <div class="skill-grid">
+        {% for post in site.categories.transverses %}
+        <article>
+            <img height="512" width="512" src="{{ post.img }}" alt="Icône représentant la compétence {{ post.title }}"/>
+            <h3>{{post.title}}</h3>
+            <div class="texts">
+                <p class="tag">{{ post.tags[0] }}</p>
+                {% assign excerpt = post.content | split: "<!-- BEGIN_EXCERPT -->" | last | split: "<!-- END_EXCERPT -->" | first | strip_html %}
+                {% if excerpt %}
+                <details>
+                    <summary>Description</summary>
+                    <p>{{ excerpt }}</p>
+                </details>
+                {% endif %}
+                <a class="secondary" href="{{ post.url }}">En savoir plus</a>
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+</section>

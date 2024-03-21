@@ -1,12 +1,15 @@
 ﻿---
 layout: post
-title:  "Développement web - Back-End"
-permalink: "/web_backend"
+title:  "Développement web (Back-End)"
+tags: confirmé web
+img: "/assets/images/skills/web-back.webp"
 ---
 
-# Développement Web - Back-End
+# Développement Web (Back-End)
 
+<!-- BEGIN_EXCERPT -->
 Le développement web back-end représente l'épine dorsale de nombreuses applications web, fournissant les fonctionnalités et la logique essentielles qui alimentent l'expérience utilisateur du côté front-end. Cette compétence couvre un large éventail de technologies telles que PHP, SQL et l'utilisation d'API, permettant ainsi la création de systèmes robustes, évolutifs et sécurisés.
+<!-- END_EXCERPT -->
 
 ## Contexte
 

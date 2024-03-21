@@ -1,12 +1,15 @@
 ﻿---
 layout: post
 title:  "Créativité"
-permalink: "/créativité"
+tags: avancé
+img: "/assets/images/skills/creativity.webp"
 ---
 
 # Créativité
 
+<!-- BEGIN_EXCERPT -->
 La créativité a toujours été un pilier central dans mes projets, qu’ils soient académiques, professionnels ou personnels. Elle me permet d’aborder les défis sous des angles uniques, en concevant des solutions originales et efficaces.
+<!-- END_EXCERPT -->
 
 ## Contexte
 

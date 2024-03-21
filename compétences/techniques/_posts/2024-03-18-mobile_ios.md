@@ -1,12 +1,16 @@
 ﻿---
 layout: post
 title:  "iOS"
-permalink: "/mobile_ios"
+tags: initié mobile
+img: "/assets/images/skills/ios.webp"
+
 ---
 
 # Développement iOS
 
+<!-- BEGIN_EXCERPT -->
 Le développement iOS, s'appuyant sur des langages comme Swift et des outils comme Unity, représente un pilier essentiel de l'ingénierie logicielle moderne. Il offre une plateforme diversifiée et robuste pour la création d'applications destinées aux appareils Apple tels que l'iPhone, l'iPad et autres. Pour un étudiant en ingénierie logicielle comme moi, la maîtrise du développement iOS revêt une importance cruciale, car elle ouvre la voie à la conception et à la réalisation d'applications innovantes et conviviales pour les utilisateurs de l'écosystème Apple.
+<!-- END_EXCERPT -->
 
 ## Contexte
 

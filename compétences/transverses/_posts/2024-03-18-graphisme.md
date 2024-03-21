@@ -1,12 +1,15 @@
 ﻿---
 layout: post
 title:  "Graphisme"
-permalink: "/graphisme"
+tags: initié
+img: "/assets/images/skills/graphisme.webp"
 ---
 
 # Graphisme
 
+<!-- BEGIN_EXCERPT -->
 Le graphisme occupe une place essentielle dans mon parcours, représentant un pilier fondamental de mes compétences. Il incarne ma capacité à donner vie à des concepts visuels, à créer des interfaces attrayantes et à transmettre efficacement des messages à travers des éléments visuels. Tout comme l'autonomie, le graphisme me permet de m'engager pleinement dans mes projets, en faisant preuve d'initiative pour façonner des designs innovants, de gérer mon temps avec efficacité pour répondre aux exigences créatives, et de résoudre les défis esthétiques de manière proactive, sans toujours attendre des directives extérieures.
+<!-- END_EXCERPT -->
 
 ## Contexte
 

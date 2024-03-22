@@ -2,6 +2,16 @@
 layout: post
 title:  "LeaderCade"
 img: "/assets/images/projects/leadercade.webp"
+competences:
+  - dotnet
+  - web_api
+  - mobile_android
+  - mobile_ios
+  - autonomie
+  - creativite
+  - planification
+  - graphisme
+  - promotion
 ---
 
 # LeaderCade

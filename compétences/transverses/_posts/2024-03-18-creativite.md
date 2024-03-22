@@ -3,6 +3,10 @@ layout: post
 title:  "Créativité"
 tags: avancé
 img: "/assets/images/skills/creativity.webp"
+realisations:
+  - simplink
+  - cappsule
+  - leadercade
 ---
 
 # Créativité

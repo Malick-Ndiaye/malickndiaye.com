@@ -3,6 +3,10 @@ layout: post
 title:  "Coopération"
 tags: confirmé
 img: "/assets/images/skills/teamwork.webp"
+realisations:
+  - sagelink
+  - simplink
+  - warnit
 ---
 
 # Coopération

@@ -3,6 +3,9 @@ layout: post
 title:  "Promotion"
 tags: initié
 img: "/assets/images/skills/marketing.webp"
+realisations:
+  - cappsule
+  - leadercade
 ---
 
 # Promotion

@@ -3,6 +3,10 @@ layout: post
 title:  "Graphisme"
 tags: initié
 img: "/assets/images/skills/graphisme.webp"
+realisations:
+  - simplink
+  - cappsule
+  - leadercade
 ---
 
 # Graphisme

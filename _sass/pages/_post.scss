@@ -25,4 +25,24 @@
   h3 {
     margin-top: space(8);
   }
+
+  .related-skills {
+    display: flex;
+    flex-direction: column;
+    gap: space(4);
+
+    .skill-list {
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: space(4);
+      
+      a {
+        padding-inline: space(8);
+        
+        &:not(:first-child) {
+          border-left: $border-separator;
+        }
+      }
+    }
+  }
 }

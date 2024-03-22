@@ -1,8 +1,12 @@
 ﻿---
 layout: post
-title:  "Développement web (Back-End)"
+title:  "Web (Back-End)"
 tags: confirmé web
 img: "/assets/images/skills/web-back.webp"
+realisations:
+  - warnit
+  - sagelink
+  - simplink
 ---
 
 # Développement Web (Back-End)

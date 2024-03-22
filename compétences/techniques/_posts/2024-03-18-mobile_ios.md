@@ -3,7 +3,9 @@ layout: post
 title:  "iOS"
 tags: initié mobile
 img: "/assets/images/skills/ios.webp"
-
+realisations:
+  - cappsule
+  - leadercade
 ---
 
 # Développement iOS

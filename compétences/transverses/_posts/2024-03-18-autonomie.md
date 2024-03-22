@@ -3,6 +3,10 @@ layout: post
 title:  "Autonomie"
 tags: avancé
 img: "/assets/images/skills/autonomy.webp"
+realisations:
+  - sagelink
+  - cappsule
+  - leadercade
 ---
 
 # Autonomie

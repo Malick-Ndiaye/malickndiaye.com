@@ -1,8 +1,10 @@
 ﻿---
 layout: post
-title:  "Développement Web (Front-End)"
+title:  "Web (Front-End)"
 tags: avancé web
 img: "/assets/images/skills/web-front.webp"
+realisations:
+  - simplink
 ---
 
 # Développement Web (Front-End)

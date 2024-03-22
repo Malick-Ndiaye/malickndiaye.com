@@ -3,6 +3,10 @@ layout: post
 title:  "Android"
 tags: avancé mobile
 img: "/assets/images/skills/android.webp"
+realisations:
+  - warnit
+  - cappsule
+  - leadercade
 ---
 
 # Développement Android

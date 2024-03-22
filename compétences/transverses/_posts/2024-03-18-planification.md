@@ -3,6 +3,10 @@ layout: post
 title:  "Planification"
 tags: confirmé
 img: "/assets/images/skills/planning.webp"
+realisations:
+  - sagelink
+  - cappsule
+  - leadercade
 ---
 
 # Planification

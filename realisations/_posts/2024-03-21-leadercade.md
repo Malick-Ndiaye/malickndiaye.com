@@ -6,7 +6,9 @@ img: "/assets/images/projects/leadercade.webp"
 
 # LeaderCade
 
+<!-- BEGIN_EXCERPT -->
 LeaderCade représente une nouvelle étape dans mon parcours de développement, marquée par un désir d'apprendre et de maîtriser la création de jeux vidéo. Ce projet a pour ambition de me familiariser avec les fondamentaux du développement de jeux en réalisant mon propre jeu, tout en offrant une expérience ludique et addictive aux joueurs. Inspiré par le classique Pong mais avec une approche novatrice, LeaderCade se présente comme un jeu de football de coups francs, mettant en avant des compétences techniques de programmation orientée objet. Disponible sur Android et iOS, LeaderCade vise à être accessible à tous, offrant ainsi un terrain de jeu idéal pour mon développement personnel en matière de programmation, de graphismes, de sons et de déploiement sur les stores.
+<!-- END_EXCERPT -->
 
 ## Contexte
 

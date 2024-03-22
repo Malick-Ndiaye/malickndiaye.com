@@ -14,10 +14,11 @@ title: "Réalisations"
 
 <section class="section">
     <div class="skill-grid">
-        {% for post in site.categories.realisations %}
+        {% assign sorted_posts = site.categories.realisations | sort: 'title' %}
+        {% for post in sorted_posts %}
         <article>
             <img class="color" height="512" width="512" src="{{ post.img }}" alt="Logo du projet {{ post.title }}"/>
-            <h3>{{post.title}}</h3>
+            <h3>{{ post.title }}</h3>
             <div class="texts">
                 {% assign excerpt = post.content | split: "<!-- BEGIN_EXCERPT -->" | last | split: "<!-- END_EXCERPT -->" | first | strip_html %}
                 {% if excerpt %}

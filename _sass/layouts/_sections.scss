@@ -1,0 +1,70 @@
+﻿@use "../base/variables" as *;
+
+html {
+  main {
+    section {
+      display: flex;
+      flex-direction: column;
+      gap: space(8);
+      padding-block: space(8);
+      
+      header {
+        align-items: center;
+      }
+      
+      &.two-col {
+        gap: space(4);
+      }
+      
+      & > a {
+        width: 100%;
+      }
+      
+      &.float {
+        display: block;
+        
+        header {
+          margin-bottom: space(8);
+        }
+        
+        img {
+          width: 45%;
+        }
+        
+        a {
+          margin-top: space(8);
+        }
+        
+        &.left > img {
+          float: left;
+          margin-right: space(4);
+        }
+        
+        &.right > img {
+          float: right;
+          margin-left: space(4);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  html {
+    main {
+      section {
+        padding-block: space(16);
+
+        &.two-col {
+          align-items: center;
+          flex-direction: row;
+          gap: space(16);
+          
+          &.reverse {
+            flex-direction: row-reverse;
+          }
+        }
+      }
+    }
+  }
+}

@@ -3,35 +3,91 @@ layout: default
 title: "Accueil"
 ---
 
-<div class="boundaries-wrapper presentation-page-container">
-    <section id="hero">
-        <div class="img-container">
-            <img height="512" width="512" src="assets/images/malick.webp" alt="Portrait professionnel de Malick Ndiaye, ingénieur logiciel."/>
-        </div>
-        <div id="hero-content" class="centered">
-        <header>
-            <h1>
-                Malick Ndiaye
-            </h1>
-            <p class="h1-subtitle">
-                Ingénieur logiciel
+<div class="boundaries-wrapper">
+    <section id="hero" class="two-col reverse">
+        <img height="512" width="512" src="assets/images/malick.webp" alt="Portrait professionnel de Malick Ndiaye, ingénieur logiciel."/>
+        <article class="mobile-center">
+            <header class="mobile-center">
+                <h1>
+                    Malick Ndiaye
+                </h1>
+                <p class="h1-subtitle">
+                    Ingénieur logiciel
+                </p>
+            </header>
+            <p>
+                Développeur Full-Stack spécialisé en applications web, mobile et windows.
             </p>
-        </header>
-        <p>
-            Développeur Full-Stack spécialisé en applications web, mobile et windows.
-            Je suis prêt à transformer vos défis en succés.
-        </p>
-        <div id="hero-buttons">
-            <a href="/contact.html" class="cta">Me Recruter</a>
-            <a href="/compétences.html" class="secondary">Compétences</a>
-        </div>
-    </div>
+            <div class="horizontal-list">
+                <a href="/contact.html" class="cta">Me Recruter</a>
+                <p>Disponible dés Septembre 2024</p>
+            </div>
+        </article>
     </section>
-
+    <section class="three-col">
+        <header>
+            <h2>Compétences</h2>
+            <p class="h2-subtitle">Mes specialités</p>
+        </header>
+            {% assign post1 = site.posts | where_exp: "post", "post.url contains 'web_frontend'"%}
+            {% assign post2 = site.posts | where_exp: "post", "post.url contains 'mobile_android'"%}
+            {% assign post3 = site.posts | where_exp: "post", "post.url contains 'dotnet'"%}
+            {% assign posts_to_display = post1 | concat: post2 | concat: post3 %}
+            {% for post in posts_to_display %}
+            <article class="card">
+                <img class="grayscale" height="512" width="512" src="{{post.img}}" alt="{{Icône représentant la compétence {{ post.title }}}}"/>
+                <header>
+                    <h3>{{post.title}}</h3>
+                    <p class="h3-subtitle">{{post.tags[0]}}</p>
+                </header>
+                {% assign excerpt = post.content | split: "<!-- BEGIN_EXCERPT -->" | last | split: "<!-- END_EXCERPT -->" | first | strip_html %}
+                {% if excerpt %}
+                <details>
+                    <summary>Description</summary>
+                    <div class="body">
+                        <p>{{ excerpt }}</p>
+                    </div>
+                </details>
+                {% endif %}
+                <a href="{{post.url}}">En savoir plus</a>
+            </article>
+            {% endfor %}
+        <a class="secondary" href="/compétences">Toutes mes compétences</a>
+    </section>
+    <section class="three-col">
+        <header>
+            <h2>Réalisations</h2>
+            <p class="h2-subtitle">Mes projets et contributions</p>
+        </header>
+            {% assign post1 = site.posts | where_exp: "post", "post.url contains 'sagelink'"%}
+            {% assign post2 = site.posts | where_exp: "post", "post.url contains 'warnit'"%}
+            {% assign post3 = site.posts | where_exp: "post", "post.url contains 'leadercade'"%}
+            {% assign posts_to_display = post1 | concat: post2 | concat: post3 %}
+            {% for post in posts_to_display %}
+            <article class="card">
+                <img class="grayscale" height="512" width="512" src="{{post.img}}" alt="{{Icône représentant la compétence {{ post.title }}}}"/>
+                <header>
+                    <h3>{{post.title}}</h3>
+                    <p class="h3-subtitle">{{post.tags[0]}}</p>
+                </header>
+                {% assign excerpt = post.content | split: "<!-- BEGIN_EXCERPT -->" | last | split: "<!-- END_EXCERPT -->" | first | strip_html %}
+                {% if excerpt %}
+                <details>
+                    <summary>Description</summary>
+                    <div class="body">
+                        <p>{{ excerpt }}</p>
+                    </div>
+                </details>
+                {% endif %}
+                <a href="{{post.url}}">En savoir plus</a>
+            </article>
+            {% endfor %}
+        <a class="secondary" href="/compétences">Toutes mes compétences</a>
+    </section>
     {% assign pageTitle = "Biographie" %}
     {% assign pageData = site.pages | where: "title", pageTitle | first %}
     {% if pageData %}
-        <section id="biographie" class="two-col">
+        <section class="two-col reverse float left">
             <header>
                 <h2>{{pageData.title}}</h2>
                 <p class="h2-subtitle">{{pageData.subtitle}}</p>
@@ -42,32 +98,31 @@ title: "Accueil"
         </section>
     {% endif %}
 
-    {% assign pageTitle = "Parcours" %}
-    {% assign pageData = site.pages | where: "title", pageTitle | first %}
-    {% if pageData %}
-        <section id="parcours" class="herringbone">
-            <header>
-                <h1>
-                    {{pageData.title}}
-                </h1>
-                <p class="h1-subtitle">
-                    {{pageData.subtitle}}
-                </p>
-            </header>
-            <p>
-                {{pageData.introduction}}
-            </p>
-            <a href="{{pageData.url}}" class="secondary">En savoir plus</a>
-        </section>
-    {% endif %}
-    
-    {% assign pageTitle = "Contact" %}
-    {% assign pageData = site.pages | where: "title", pageTitle | first %}
-    {% if pageData %}
-        <section id="contact">
-            {{ pageData.excerpt }}
-            <a href="/contact" class="secondary">Autres réseaux</a>
-        </section>
-    {% endif %}
-
+<!--    {% assign pageTitle = "Parcours" %}-->
+<!--    {% assign pageData = site.pages | where: "title", pageTitle | first %}-->
+<!--    {% if pageData %}-->
+<!--        <section id="parcours" class="herringbone">-->
+<!--            <header>-->
+<!--                <h1>-->
+<!--                    {{pageData.title}}-->
+<!--                </h1>-->
+<!--                <p class="h1-subtitle">-->
+<!--                    {{pageData.subtitle}}-->
+<!--                </p>-->
+<!--            </header>-->
+<!--            <p>-->
+<!--                {{pageData.introduction}}-->
+<!--            </p>-->
+<!--            <a href="{{pageData.url}}" class="secondary">En savoir plus</a>-->
+<!--        </section>-->
+<!--    {% endif %}-->
+<!--    -->
+<!--    {% assign pageTitle = "Contact" %}-->
+<!--    {% assign pageData = site.pages | where: "title", pageTitle | first %}-->
+<!--    {% if pageData %}-->
+<!--        <section id="contact">-->
+<!--            {{ pageData.excerpt }}-->
+<!--            <a href="/contact" class="secondary">Autres réseaux</a>-->
+<!--        </section>-->
+<!--    {% endif %}-->
 </div>

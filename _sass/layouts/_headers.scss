@@ -1,0 +1,11 @@
+﻿@use "../base/variables" as *;
+
+html {
+  main {
+    header {
+      display: flex;
+      flex-direction: column;
+      gap: space(2);
+    }
+  }
+}

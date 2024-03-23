@@ -1,16 +1,17 @@
 ---
 ---
 
-@import "variables";
-@import "interactables";
-@import "typography";
+@import "base/variables";
+@import "base/interactables";
+@import "base/typography";
 
 @import "includes/navbar";
 @import "includes/footer";
 
-@import "pages/presentation";
-@import "pages/post";
-@import "pages/contact";
+@import "layouts/articles";
+@import "layouts/headers";
+@import "layouts/lists";
+@import "layouts/sections";
 
 html {
   height: 100%;
@@ -36,13 +37,22 @@ html {
     main {
       display: flex;
       justify-content: center;
-      margin-bottom: space(8);
-      margin-top: calc(48px + 32px);
-
+      margin-top: 48px;
+      
       img {
         border: $border-separator;
         height: auto;
-        width: 100%;
+        max-width: 100%;
+        
+        &.grayscale {
+          filter: grayscale(1);
+        }
+      }
+
+      .mobile-center {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
       }
     }
   }
@@ -53,7 +63,13 @@ html {
     body {
       main {
         margin-bottom: space(16);
-        margin-top: calc(64px + 64px);
+        margin-top: 64px;
+        
+        .mobile-center {
+          align-items: start;
+          justify-content: start;
+          text-align: start;
+        }
       }
     }
   }

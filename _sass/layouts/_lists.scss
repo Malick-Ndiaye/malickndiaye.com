@@ -1,0 +1,39 @@
+﻿@use "../base/variables" as *;
+
+html {
+  main {
+    .horizontal-list {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      gap: space(4);
+      justify-content: center;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  html {
+    main {
+      .horizontal-list {
+        justify-content: start;
+      }
+
+      .three-col {
+        column-gap: space(16);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: space(8);
+        
+        header {
+          align-items: center;
+          grid-column: 1 / 4;
+        }
+        
+        a {
+          grid-column: 2 / 3;
+        }
+      }
+    }
+  }
+}

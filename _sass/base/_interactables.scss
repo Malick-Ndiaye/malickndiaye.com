@@ -1,10 +1,6 @@
-﻿@use "variables" as *;
+﻿@use "base/variables" as *;
 
 html {
-  :current(a) {
-    background: red;
-  }
-
   button, a {
     cursor: pointer;
     min-height: 48px;
@@ -22,8 +18,7 @@ html {
 
   a {
     align-items: center;
-    border-block: 2px solid transparent;
-    box-sizing: border-box;
+    border: $border-button-transparent;
     color: $color-foreground;
     display: flex;
     justify-content: center;
@@ -33,7 +28,7 @@ html {
     width: fit-content;
 
     &:hover, &:active, &.current-page {
-      border-bottom: 2px solid $color-foreground-accent;
+      border-bottom: $border-button;
     }
 
     &.current-page {
@@ -64,16 +59,47 @@ html {
       }
     }
   }
-
+  
   details {
-    & > * {
-      margin-bottom: space(4);
+    border: $border-separator;
+    display: flex;
+    flex-direction: column;
+    padding: space(2);
+    
+    &, & > * {
+      padding: space(2);
     }
-
+    
     summary {
       cursor: pointer;
+      display: flex;
       font-size: 1.6rem;
+      justify-content: space-between;
       text-transform: uppercase;
+      
+      &::marker {
+        display: none;
+      }
+
+      &::after {
+        align-self: center;
+        content: '';
+        border-top: 10px solid $color-foreground-accent;
+        border-inline: 7px solid transparent;
+        transition: 0.1s linear;
+      }
+    }
+    
+    .body {
+      background: $color-background-accent;
+    }
+    
+    &:hover {
+      border: $border-button;
+    }
+    
+    &[open] > summary::after {
+      transform: rotate(180deg);
     }
   }
 }

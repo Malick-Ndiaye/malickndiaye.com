@@ -5,14 +5,12 @@ $color-foreground: #333333;
 $color-foreground-accent: #000000;
 
 $border-separator: 2px solid $color-background-accent;
-
-$border-button: 1px solid $color-foreground-accent;
-$border-button-transparent: 1px solid transparent;
+$border-button: 2px solid $color-foreground-accent;
+$border-button-transparent: 2px solid transparent;
 
 $spacing-unit: 4px;
 
 $breakpoint-desktop: 1024px;
-$breakpoint-tablet: 768px;
 
 $size-mobile-padding-horizontal: 16px;
 $size-desktop-max-width: 1200px;
@@ -20,7 +18,6 @@ $size-desktop-max-width: 1200px;
 $box-shadow: 0 0 16px 8px rgba(204,204,204,0.5);
 
 $pattern-herringbone: url("../images/backgrounds/herringbone.svg");
-
 $pattern-memphis: url("../images/backgrounds/memphis.svg");
 
 @mixin overlay {

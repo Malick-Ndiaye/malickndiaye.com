@@ -1,0 +1,43 @@
+﻿@use "../base/variables" as *;
+
+html {
+  main {
+    article {
+      display: flex;
+      flex-direction: column;
+      gap: space(4);
+      
+      &.card {
+        align-items: center;
+        border: $border-separator;
+        gap: space(8);
+        padding: space(8);
+        text-align: center;
+        
+        img {
+          border: 0;
+          max-width: 30%;
+        }
+        
+        details, a {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  html {
+    main {
+      article {
+        gap: space(8);
+        
+        &.card:hover {
+          box-shadow: $box-shadow;
+          transform: scale(1.025);
+        }
+      }
+    }
+  }
+}

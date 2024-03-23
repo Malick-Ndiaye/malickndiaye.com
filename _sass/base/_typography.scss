@@ -1,4 +1,4 @@
-﻿@use 'variables' as *;
+﻿@use 'base/variables' as *;
 
 @font-face {
   font-family: 'Taviraj';
@@ -84,13 +84,6 @@ html {
   
   p, a {
     line-height: 2.4rem;
-  }
-
-  .tag {
-    border-inline: $border-separator;
-    padding-block: space(1);
-    padding-inline: space(2);
-    width: fit-content;
   }
 
   .subtext {

@@ -55,25 +55,62 @@ html {
     }
 
     &.secondary {
-      border: $border-button;
+      border: $border-accent;
 
       &:hover, &:active {
-        border-left: $border-button-transparent;
-        border-right: $border-button-transparent;
-        border-top: $border-button-transparent;
+        border-left: $border-transparent;
+        border-right: $border-transparent;
+        border-top: $border-transparent;
       }
     }
   }
 
   details {
-    & > * {
-      margin-bottom: space(4);
+    border: $border-separator;
+    display: flex;
+    flex-direction: column;
+    padding: space(2);
+    width: 100%;
+
+    &, & > * {
+      padding: space(2);
     }
 
     summary {
       cursor: pointer;
+      display: flex;
       font-size: 1.6rem;
+      justify-content: space-between;
       text-transform: uppercase;
+
+      &::marker {
+        display: none;
+      }
+
+      &::after {
+        align-self: center;
+        content: '';
+        border-top: 10px solid $color-foreground-accent;
+        border-inline: 7px solid transparent;
+        transition: 0.1s linear;
+      }
+    }
+
+    .body {
+      background: $color-background-accent;
+      margin: space(2);
+      
+      p {
+        text-align: start;
+      }
+    }
+
+    &:hover {
+      border: $border-accent;
+    }
+
+    &[open] > summary::after {
+      transform: rotate(180deg);
     }
   }
 }

@@ -24,7 +24,9 @@ title: "Réalisations"
                 {% if excerpt %}
                 <details>
                     <summary>Description</summary>
-                    <p>{{ excerpt }}</p>
+                    <div class="body">
+                        <p>{{ excerpt }}</p>
+                    </div>
                 </details>
                 {% endif %}
                 <a class="secondary" href="{{ post.url }}">En savoir plus</a>

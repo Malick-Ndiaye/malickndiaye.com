@@ -22,52 +22,142 @@ title: "Accueil"
             Je suis prêt à transformer vos défis en succés.
         </p>
         <div id="hero-buttons">
-            <a href="/contact.html" class="cta">Me Recruter</a>
-            <a href="/compétences.html" class="secondary">Compétences</a>
+            <a href="/contact" class="cta">Me Recruter</a>
+            <a href="/biographie" class="secondary">Biographie</a>
         </div>
     </div>
     </section>
-
-    {% assign pageTitle = "Biographie" %}
-    {% assign pageData = site.pages | where: "title", pageTitle | first %}
-    {% if pageData %}
-        <section id="biographie" class="two-col">
+    
+    <section class="three-col post-list-excerpt">
+        <header>
+            <h2>Compétences</h2>
+            <p class="h2-subtitle">Mes specialités</p>
+        </header>
+        <div class="skill-grid">
+        
+        {% assign post1 = site.posts | where_exp: "post", "post.url contains 'web_frontend'"%}
+        {% assign post2 = site.posts | where_exp: "post", "post.url contains 'mobile_android'"%}
+        {% assign post3 = site.posts | where_exp: "post", "post.url contains 'dotnet'"%}
+        {% assign posts_to_display = post1 | concat: post2 | concat: post3 %}
+        {% for post in posts_to_display %}
+        <article class="card">
+            <img class="grayscale" height="512" width="512" src="{{post.img}}" alt="{{Icone représentant la compétence {{ post.title }}}}"/>
             <header>
-                <h2>{{pageData.title}}</h2>
-                <p class="h2-subtitle">{{pageData.subtitle}}</p>
+                <h3>{{post.title}}</h3>
+                <p class="h3-subtitle">{{post.tags[0]}}</p>
             </header>
-            <img height="512" width="512" alt="{{page.img-alt}}" src="{{site.baseurl}}/assets/images/{{pageData.img-src}}"/>
-            <p> {{pageData.introduction}} </p>
-            <a href="{{pageData.url}}" class="secondary">En savoir plus</a>
-        </section>
-    {% endif %}
+            {% assign excerpt = post.content | split: "<!-- BEGIN_EXCERPT -->" | last | split: "<!-- END_EXCERPT -->" | first | strip_html %}
+            {% if excerpt %}
+            <details>
+                <summary>Description</summary>
+                <div class="body">
+                    <p>{{ excerpt }}</p>
+                </div>
+            </details>
+            {% endif %}
+            <a href="{{post.url}}">En savoir plus</a>
+        </article>
+        {% endfor %}
+        </div>
+            
+        <a class="secondary" href="/compétences">Toutes mes compétences</a>
+    </section>
 
     {% assign pageTitle = "Parcours" %}
     {% assign pageData = site.pages | where: "title", pageTitle | first %}
     {% if pageData %}
-        <section id="parcours" class="herringbone">
-            <header>
-                <h1>
-                    {{pageData.title}}
-                </h1>
-                <p class="h1-subtitle">
-                    {{pageData.subtitle}}
-                </p>
-            </header>
-            <p>
-                {{pageData.introduction}}
+    <section id="parcours">
+        <header>
+            <h2>
+                {{pageData.title}}
+            </h2>
+            <p class="h2-subtitle">
+                {{pageData.subtitle}}
             </p>
-            <a href="{{pageData.url}}" class="secondary">En savoir plus</a>
+        </header>
+        <section class="timeline">
+            <a target="_blank" href="https://www.leschamanes.com/" class="header">
+                <img height="512" width="512" src="{{site.baseurl}}/assets/images/places/Chamanes.webp" alt="Photo du siege de l'entreprise Les Chamanes à Montauban">
+                <img height="512" width="512" class="logo" src="{{site.baseurl}}/assets/images/places/logos/chamanes.webp" alt="Logo de l'entreprise Les Chamanes à Montauban">
+                <div class="texts">
+                    <h2>
+                        Les Chamanes
+                    </h2>
+                    <p class="h2-subtitle">
+                        Créateurs et fabricants de bijoux
+                    </p>
+                </div>
+            </a>
+            <div class="articles">
+                <article>
+                    <header>
+                        <h3>
+                            Développeur web
+                        </h3>
+                        <p class="h3-subtitle">
+                            Septembre 2022 - Août 2024
+                        </p>
+                        <p class="subtext tag">
+                            Alternance
+                        </p>
+                    </header>
+                    <p>
+                        Après un stage enrichissant, je rejoins Les Chamanes en alternance pour approfondir ma pratique du <a href="{{site.baseurl}}/compétences/web-backend">Développement web</a>. Mes missions incluent la maintenance du site <a href="http://www.nature.fr">nature.fr</a>, le développement d'une API .Net <a href="{{site.baseurl}}/projets/sagelink">SageLink</a>, l'amélioration de l'application <a href="{{site.baseurl}}/projets/simplink">SimpLink</a> et la refonte du site <a href="http://www.franckherval.com">franckherval.com</a>.
+                    </p>
+                </article>
+                <a href="{{pageData.url}}" class="secondary">Mon parcours complet</a>
+            </div>
         </section>
+    </section>
     {% endif %}
+    
+    <section class="three-col post-list-excerpt">
+        <header>
+            <h2>Réalisations</h2>
+            <p class="h2-subtitle">Mes projets et contributions</p>
+        </header>
+        <div class="skill-grid">
+        {% assign post1 = site.posts | where_exp: "post", "post.url contains 'sagelink'"%}
+        {% assign post2 = site.posts | where_exp: "post", "post.url contains 'warnit'"%}
+        {% assign post3 = site.posts | where_exp: "post", "post.url contains 'leadercade'"%}
+        {% assign posts_to_display = post1 | concat: post2 | concat: post3 %}
+        {% for post in posts_to_display %}
+        <article class="card">
+            <img class="color" height="512" width="512" src="{{post.img}}" alt="{{Icone représentant la compétence {{ post.title }}}}"/>
+            <header>
+                <h3>{{post.title}}</h3>
+                <p class="h3-subtitle">{{post.tags[0]}}</p>
+            </header>
+            {% assign excerpt = post.content | split: "<!-- BEGIN_EXCERPT -->" | last | split: "<!-- END_EXCERPT -->" | first | strip_html %}
+            {% if excerpt %}
+            <details>
+                <summary>Description</summary>
+                <div class="body">
+                    <p>{{ excerpt }}</p>
+                </div>
+            </details>
+            {% endif %}
+            <a href="{{post.url}}">En savoir plus</a>
+        </article>
+        {% endfor %}
+        </div>
+        <a class="secondary" href="/compétences">Toutes mes compétences</a>
+    </section>
     
     {% assign pageTitle = "Contact" %}
     {% assign pageData = site.pages | where: "title", pageTitle | first %}
     {% if pageData %}
         <section id="contact">
+            <header>
+                <h2>
+                    {{pageData.title}}
+                </h2>
+                <p class="h2-subtitle">
+                    {{pageData.subtitle}}
+                </p>
+            </header>
             {{ pageData.excerpt }}
             <a href="/contact" class="secondary">Autres réseaux</a>
         </section>
     {% endif %}
-
 </div>

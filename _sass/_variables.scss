@@ -4,10 +4,9 @@ $color-background-accent: #f2f2f2;
 $color-foreground: #333333;
 $color-foreground-accent: #000000;
 
-$border-separator: 2px solid $color-background-accent;
-
-$border-button: 1px solid $color-foreground-accent;
-$border-button-transparent: 1px solid transparent;
+$border-separator: 1px solid $color-background-accent;
+$border-accent: 1px solid $color-foreground-accent;
+$border-transparent: 1px solid transparent;
 
 $spacing-unit: 4px;
 

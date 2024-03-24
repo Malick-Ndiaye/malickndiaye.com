@@ -1,15 +1,8 @@
 ---
 layout: default
 title: "Contact"
+subtitle: "Restons connectés"
 excerpt:
-    <header>
-        <h1>
-            Contact
-        </h1>
-        <p class="h1-subtitle">
-            Restons connectés
-        </p>
-    </header>
     <article class="contact-card">
         <img width="512" height="512" src="/assets/images/socials/email.webp" alt="Enveloppe, représentant un email"/>
         <h2>
@@ -25,6 +18,14 @@ excerpt:
 ---
 
 <div id="contact" class="boundaries-wrapper contact-page-container">
+    <header>
+        <h1>
+            {{title}}
+        </h1>
+        <p class="h1-subtitle">
+            {{subtitle}}
+        </p>
+    </header>
     {{page.excerpt}}
     <article class="contact-card">
     <img width="512" height="512" src="{{site.baseurl}}/assets/images/socials/linkedin.webp" alt="Logo de Linkedin"/>

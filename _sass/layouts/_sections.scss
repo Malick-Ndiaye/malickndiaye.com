@@ -3,47 +3,32 @@
 html {
   main {
     section {
+      align-items: center;
       display: flex;
       flex-direction: column;
       gap: space(8);
+      justify-content: center;
       padding-block: space(8);
+      text-align: center;
       
-      header {
-        align-items: center;
-      }
-      
-      &.two-col {
-        gap: space(4);
-      }
-      
-      & > a {
+      a {
         width: 100%;
       }
       
-      &.float {
-        display: block;
-        
-        header {
-          margin-bottom: space(8);
-        }
-        
-        img {
-          width: 45%;
-        }
-        
-        a {
-          margin-top: space(8);
-        }
-        
-        &.left > img {
-          float: left;
-          margin-right: space(4);
-        }
-        
-        &.right > img {
-          float: right;
-          margin-left: space(4);
-        }
+      .body {
+        display: flex;
+        flex-direction: column;
+        gap: space(8);
+      }
+    }
+    
+    #hero {
+      gap: space(4);
+      
+      .cta-container {
+        display: flex;
+        flex-direction: column;
+        gap: space(2);
       }
     }
   }
@@ -54,15 +39,25 @@ html {
     main {
       section {
         padding-block: space(16);
+      }
 
-        &.two-col {
+      .three-col {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+        header {
           align-items: center;
-          flex-direction: row;
-          gap: space(16);
-          
-          &.reverse {
-            flex-direction: row-reverse;
-          }
+          grid-column: 1 / 4;
+          grid-row: 1;
+        }
+        
+        article {
+          grid-row: 2;
+        }
+        
+        a {
+          grid-column: 2;
+          grid-row: 3;
         }
       }
     }

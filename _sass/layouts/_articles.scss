@@ -2,27 +2,63 @@
 
 html {
   main {
-    article {
+    .card {
+      align-items: center;
+      border: $border-separator;
       display: flex;
       flex-direction: column;
-      gap: space(4);
-      
-      &.card {
-        align-items: center;
-        border: $border-separator;
-        gap: space(8);
-        padding: space(8);
-        text-align: center;
-        
-        img {
-          border: 0;
-          max-width: 30%;
-        }
-        
-        details, a {
-          width: 100%;
-        }
+      gap: space(8);
+      padding: space(8);
+      position: relative;
+      text-align: center;
+
+      img {
+        border: 0;
+        max-width: 30%;
       }
+
+      details, a {
+        width: 100%;
+      }
+      
+      details {
+        text-align: start;
+      }
+    }
+    .experience-card {
+      border: $border-button;
+      position: relative;
+      text-align: center;
+      text-transform: unset;
+      width: fit-content;
+      
+      .background {
+        border: 0;
+      }
+      
+      .logo {
+        border: 0;
+        left: 0;
+        max-height: 96px;
+        max-width: 96px;
+        position: absolute;
+        top: 0;
+      }
+      
+      header {
+        @include overlay;
+        border-top: $border-button;
+        bottom: 0;
+        padding-block: space(2);
+        position: absolute;
+        width: 100%;
+      }
+    }
+    .experience {
+      display: flex;
+      flex-direction: column;
+      gap: space(8);
+      text-align: start;
     }
   }
 }
@@ -30,12 +66,19 @@ html {
 @media (min-width: $breakpoint-desktop) {
   html {
     main {
-      article {
-        gap: space(8);
+      .card:hover {
+        box-shadow: $box-shadow;
+        transform: scale(1.025);
+      }
+      .experience-card:hover {
+        filter: grayscale(0.5);
         
-        &.card:hover {
-          box-shadow: $box-shadow;
-          transform: scale(1.025);
+        header {
+          background: $color-foreground-accent;
+        }
+        
+        header, p {
+          color: $color-background;
         }
       }
     }

@@ -16,7 +16,7 @@ competences:
 
 # LeaderCade
 
-<video controls autoplay muted>
+<video controls autoplay muted loop>
   <source src="\assets\images\projects\Illustrations\leadercade_video.mp4" type="video/mp4">
 </video>
 

@@ -1,6 +1,8 @@
 ﻿@use "../variables" as *;
 
 .post-page-container {
+  display: flex;
+  flex-direction: column;
   
   p {
     margin-top: space(4);
@@ -44,5 +46,26 @@
         }
       }
     }
+  }
+  
+  p:has(img) {
+    display: flex;
+    justify-content: center;
+  }
+  
+  img {
+    max-height: max-content;
+    max-width: max-content;
+    
+    &.google_play {
+      max-width: 256px;
+    }
+  }
+  
+  video {
+    border: $border-separator;
+    margin-bottom: space(4);
+    margin-inline: auto;
+    width: 50%;
   }
 }

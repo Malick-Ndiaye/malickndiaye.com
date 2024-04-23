@@ -15,7 +15,7 @@ Le développement web constitue un pilier essentiel de l'ingénierie logicielle,
 
 ## Contexte
 
-Dans le cadre de l'ingénierie logicielle, la maîtrise du développement web revêt une importance capitale pour répondre aux besoins croissants des utilisateurs, tant sur le plan professionnel que personnel. Les applications web jouent un rôle prépondérant dans notre quotidien, offrant des solutions variées pour la communication, le commerce électronique, le divertissement, et bien d'autres domaines encore. Ainsi, en tant qu'ingénieur logiciel, la capacité à concevoir, développer et entretenir des applications web efficaces est cruciale pour demeurer compétitif sur le marché.
+Dans le cadre de l'ingénierie logicielle, la maîtrise du développement web revêt une importance capitale pour répondre aux besoins croissants des utilisateurs, tant sur le plan professionnel que personnel. Les applications web jouent un rôle prépondérant dans notre quotidien, offrant des solutions variées pour la communication, le commerce électronique, le divertissement, et bien d'autres domaines encore. Ainsi, en tant qu'ingénieur logiciel, la capacité à concevoir, développer et entretenir des applications web efficaces est crucial pour demeurer compétitif sur le marché.
 
 ## Expériences
 
@@ -41,8 +41,16 @@ Mon portfolio continue d'évoluer comme un projet vivant, me permettant de reste
 
 ## Synthèse
 
-Mon parcours m'a permis d'atteindre un niveau d'expertise dans le développement web, en particulier dans le domaine du front-end. J'ai exploré et maîtrisé divers aspects, allant de la création de mises en page avec HTML et CSS à l'implémentation de fonctionnalités dynamiques avec JavaScript, Angular, Ajax et jQuery. De plus, j'ai acquis une expérience significative dans l'utilisation de plateformes telles que WordPress et Jekyll pour la création de sites web et de blogs.
+En tant qu'ingénieur logiciel, je possède une maîtrise avancée du développement web, notamment dans le domaine du front-end. J'ai acquis une solide maîtrise des langages et des frameworks tels que HTML, CSS, JavaScript, Angular, Ajax et jQuery, ce qui me permet de concevoir des interfaces utilisateur interactives et des systèmes web robustes.
 
-Malgré cette expertise, je reste conscient que le domaine du développement web est en constante évolution. Ainsi, je continue à m'améliorer en participant à des projets personnels, académiques et professionnels. Cette approche me permet de rester à jour avec les dernières technologies et tendances du développement web, tout en renforçant mes compétences existantes. J'ai également investi du temps dans la lecture de la documentation des différents frameworks pour me tenir au courant des dernières avancées. En outre, j'ai suivi des cours complets sur YouTube pour approfondir mes connaissances en UX/UI, ce qui m'a permis d'élargir mes compétences et de rester compétitif sur le marché.
+Malgré mon niveau actuel, je suis conscient de ma marge de progression continue dans cette compétence. Je reste ouvert à l'apprentissage de nouvelles technologies et méthodologies pour rester à la pointe de mon domaine. Je comprends également l'importance cruciale du contexte dans lequel cette compétence est utilisée. Chaque projet présente ses propres défis et exigences, nécessitant une adaptation et une évolution constantes de mes compétences pour répondre efficacement aux besoins spécifiques.
 
-Par ailleurs, je suis résolu à approfondir mes connaissances des bonnes pratiques et des conventions de programmation pour garantir la création de solutions web de haute qualité et évolutives. En combinant cette volonté d'apprentissage avec mon expérience existante, je suis confiant dans ma capacité à relever les défis futurs du développement web avec succès.
+Dans mon profil d'Expert en Ingénierie, le développement web occupe une place centrale en raison de son rôle crucial dans la conception, le développement et la maintenance d'applications web de haute qualité. Mes responsabilités actuelles incluent la conception et l'implémentation d'interfaces utilisateur conviviales, ainsi que l'optimisation des performances et du référencement des sites web.
+
+Ma vitesse d'acquisition de cette compétence a été notable, comme en témoignent mes réalisations passées telles que la refonte de sites web pour des clients renommés. Cependant, je reste humble face à la nécessité d'un apprentissage continu et d'une adaptation aux évolutions rapides de la technologie.
+
+Avec le recul que j'ai aujourd'hui, je conseille vivement aux autres et à moi-même de maintenir une curiosité intellectuelle constante et de rester à l'affût des dernières tendances et bonnes pratiques dans le domaine du développement web. Je recommande également de diversifier ses compétences en explorant d'autres domaines complémentaires tels que l'UX/UI design et le référencement naturel pour enrichir son profil professionnel.
+
+À moyen terme, je vise à approfondir encore davantage mes compétences en développement web en explorant de nouveaux frameworks tels que React et en explorant les bonnes pratiques quant au design d'interfaces accessibles.
+
+En ce qui concerne mes formations à venir, je prévois de suivre des cours supplémentaires sur ces sujets en ligne, ainsi que de réaliser des projets les mettant à profit pour rester à jour avec les dernières avancées de l'industrie.

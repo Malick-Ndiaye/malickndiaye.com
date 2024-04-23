@@ -5,7 +5,7 @@ layout: default
 <div class="boundaries-wrapper post-page-container">
     {{content}}
     <section class="related-skills">
-        <h2>{% if page.categories contains 'compétences' %}Projets liées{% elsif page.categories contains 'realisations' %}Compétences liés{% endif %}</h2>
+        <h2>{% if page.categories contains 'compétences' %}Projets liées{% elsif page.categories contains 'realisations' %}Compétences liées{% endif %}</h2>
         <div class="skill-list">
             {% for competence in page.competences %}
             {% for post in site.posts %}
@@ -25,7 +25,3 @@ layout: default
         </div>
     </section>
 </div>
-
-
-
-

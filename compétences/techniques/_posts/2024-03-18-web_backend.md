@@ -45,7 +45,15 @@ Simplink a été une expérience déterminante dans mon parcours universitaire, 
 
 ## Synthèse
 
-Le développement web back-end a été une composante essentielle de mon parcours, illustrant ma capacité à concevoir et mettre en œuvre des solutions robust
+Je maîtrise le développement web back-end à un niveau confirmé, comme en témoignent mes expériences variées dans des projets tels que SageLink, WarnIT, Cappsule, LeaderCade et Simplink. Ces projets m'ont permis de développer une compréhension approfondie des technologies telles que PHP, SQL et les APIs, ainsi que des meilleures pratiques en matière de sécurité et de performance.
 
-es pour répondre aux besoins métier des applications web. À travers des projets tels que SageLink, WarnIT, Cappsule, LeaderCade et Simplink, j'ai pu explorer un large éventail de technologies et renforcer mes compétences en développement backend, notamment dans l'utilisation de PHP, SQL et des APIs. Bien que je me considère comme confirmé en développement backend, je reconnais également qu'il y a toujours place à l'amélioration, notamment dans les aspects liés à la manipulation des bases de données. Je prévois donc de consacrer du temps à des projets personnels afin de renforcer mes connaissances dans ce domaine, car je suis conscient de l'importance de devenir un développeur web full stack. En somme, mon expérience en développement web back-end a été enrichissante et m'a donné une base solide pour continuer à progresser dans ce domaine.
+Mon niveau de compétence dans le développement web back-end est contextualisé en fonction des exigences spécifiques de chaque projet. Je suis capable de m'adapter à différents environnements et de répondre à divers besoins métier, mais je suis également conscient que chaque projet apporte son lot de défis uniques nécessitant une approche adaptative.
+
+Dans mon profil d'Expert en Ingénierie, le développement web back-end occupe une place centrale en raison de sa contribution essentielle à la création d'applications web complètes et performantes. En tant qu'ingénieur logiciel, cette compétence est primordiale pour la conception et la gestion de la logique métier des applications web, ce qui correspond à mes responsabilités actuelles et à mes aspirations professionnelles.
+
+Ma vitesse d'acquisition de cette compétence a été remarquable, notamment grâce à une immersion intensive dans des projets concrets et à une volonté constante d'apprentissage et de perfectionnement.
+
+Avec le recul que j'ai aujourd'hui, je conseille de toujours maintenir une veille technologique active et de participer à des projets variés pour continuer à développer ses compétences en développement web back-end. Il est également important de se concentrer sur la documentation et la qualité du code pour faciliter la collaboration et assurer la pérennité des projets.
+
+À moyen terme, je prévois de continuer à renforcer mes compétences en développement web back-end en travaillant sur des projets personnels et en explorant des technologies émergentes. Je ne prévois pas de suivre de formations officielles, mais je resterai ouvert aux opportunités d'apprentissage informel et à l'autoformation. Mon objectif est de devenir un développeur web full stack, capable de concevoir et de mettre en œuvre des solutions logicielles intégrées et évolutives.
 

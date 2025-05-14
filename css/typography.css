@@ -1,0 +1,121 @@
+﻿@font-face {
+    font-family: 'Taviraj';
+    font-weight: 300;
+    src: url('../fonts/Taviraj/taviraj-light-webfont.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Taviraj';
+    font-weight: 400;
+    src: url('../fonts/Taviraj/taviraj-regular-webfont.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Taviraj';
+    font-weight: 700;
+    src: url('../fonts/Taviraj/taviraj-bold-webfont.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 300;
+    src: url('../fonts/Montserrat/Montserrat-Light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    src: url('../fonts/Montserrat/Montserrat-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    src: url('../fonts/Montserrat/Montserrat-Bold.woff2') format('woff2');
+}
+
+:root {
+    --font-body: 'Montserrat', sans-serif;
+    --font-headings: 'Taviraj', serif;
+}
+
+::selection {
+    background: var(--color-background-accent);
+    color: var(--color-foreground);
+}
+
+html {
+    color: var(--color-foreground);
+    font-family: var(--font-body), sans-serif;
+    font-size: 62.5%;
+    font-weight: 400;
+}
+
+h1, h2, h3,
+.h1-subtitle, .h2-subtitle, .h3-subtitle,
+.tag, .subtext{
+    font-family: var(--font-headings), serif;
+}
+
+h1, h2, h3, .tag {
+    font-weight: 700;
+}
+
+.h1-subtitle, .h2-subtitle, .h3-subtitle,
+.subtext {
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 3.8rem;
+    line-height: 3.8rem;
+}
+
+.h1-subtitle, h2 {
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+}
+
+.h2-subtitle, h3 {
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.h3-subtitle {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+}
+
+p, a {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    max-width: 60rem;
+}
+
+a:not(.project-card) {
+    background: var(--color-background-dark);
+    border: 1px solid var(--color-background-dark);
+    color: var(--color-foreground-alt);
+    cursor: pointer;
+    display: inline;
+    padding: 4px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+a.secondary {
+    background: var(--color-background);
+    border: 1px solid var(--color-foreground);
+    color: var(--color-foreground);
+}
+
+a:where([href]):hover{
+    scale: 1.05;
+}
+
+.tag, .subtext {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+}

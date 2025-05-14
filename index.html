@@ -1,163 +1,249 @@
----
-layout: default
-title: "Accueil"
----
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<div class="boundaries-wrapper presentation-page-container">
-    <section id="hero">
-        <div class="img-container">
-            <img height="512" width="512" src="assets/images/malick.webp" alt="Portrait professionnel de Malick Ndiaye, ingénieur logiciel."/>
-        </div>
-        <div id="hero-content" class="centered">
-        <header>
-            <h1>
-                Malick Ndiaye
-            </h1>
-            <p class="h1-subtitle">
-                Ingénieur logiciel
-            </p>
-        </header>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Malick Ndiaye - Portfolio</title>
+    <meta name="description" content="Portfolio de Malick Ndiaye, développeur logiciel full-stack.">
+</head>
+<body class="flex-col padded">
+<section id="hero" class="border flex-col padded">
+    <img src="images/malick.png" class="border" height="592" width="592" alt="photo de profil de Malick"/>
+    <div class="section-body flex-col">
+        <h1>Malick Ndiaye</h1>
+        <p class="h1-subtitle">Ingénieur Logiciel</p>
         <p>
-            Développeur Full-Stack spécialisé en application web, mobile et windows.
-            Je suis prêt à transformer vos défis en succès.
+            Développeur Full-Stack spécialisé en applications web, mobile et windows, j’ai mené de nombreux projets, en entreprise comme en autonomie.
         </p>
-        <div id="hero-buttons">
-            <a href="/contact" class="cta">Me Recruter</a>
-            <a href="/biographie" class="secondary">Biographie</a>
+        <div class="flex-row">
+            <a href="#projects">Projets</a>
+            <a class="secondary" href="#contact">Contacter</a>
         </div>
     </div>
-    </section>
-    
-    <section class="three-col post-list-excerpt">
-        <header>
-            <h2>Compétences</h2>
-            <p class="h2-subtitle">Mes spécialités</p>
-        </header>
-        <div class="skill-grid">
-        
-        {% assign post1 = site.posts | where_exp: "post", "post.url contains 'web_frontend'"%}
-        {% assign post2 = site.posts | where_exp: "post", "post.url contains 'mobile_android'"%}
-        {% assign post3 = site.posts | where_exp: "post", "post.url contains 'dotnet'"%}
-        {% assign posts_to_display = post1 | concat: post2 | concat: post3 %}
-        {% for post in posts_to_display %}
-        <article class="card">
-            <img class="grayscale" height="512" width="512" src="{{post.img}}" alt="{{Icone représentant la compétence {{ post.title }}}}"/>
-            <header>
-                <h3>{{post.title}}</h3>
-                <p class="h3-subtitle">{{post.tags[0]}}</p>
-            </header>
-            {% assign excerpt = post.content | split: "<!-- BEGIN_EXCERPT -->" | last | split: "<!-- END_EXCERPT -->" | first | strip_html %}
-            {% if excerpt %}
-            <details>
-                <summary>Description</summary>
-                <div class="body">
-                    <p>{{ excerpt }}</p>
-                </div>
-            </details>
-            {% endif %}
-            <a href="{{post.url}}">En savoir plus</a>
-        </article>
-        {% endfor %}
-        </div>
-            
-        <a class="secondary" href="/competences">Toutes mes compétences</a>
-    </section>
+</section>
 
-    {% assign pageTitle = "Parcours" %}
-    {% assign pageData = site.pages | where: "title", pageTitle | first %}
-    {% if pageData %}
-    <section id="parcours">
-        <header>
-            <h2>
-                {{pageData.title}}
-            </h2>
-            <p class="h2-subtitle">
-                {{pageData.subtitle}}
-            </p>
-        </header>
-        <section class="timeline">
-            <a target="_blank" href="https://www.leschamanes.com/" class="header">
-                <img height="512" width="512" src="{{site.baseurl}}/assets/images/places/Chamanes.webp" alt="Photo du siege de l'entreprise Les Chamanes à Montauban">
-                <img height="512" width="512" class="logo" src="{{site.baseurl}}/assets/images/places/logos/chamanes.webp" alt="Logo de l'entreprise Les Chamanes à Montauban">
-                <div class="texts">
-                    <h2>
-                        Les Chamanes
-                    </h2>
-                    <p class="h2-subtitle">
-                        Créateurs et fabricants de bijoux
-                    </p>
-                </div>
-            </a>
-            <div class="articles">
-                <article>
-                    <header>
-                        <h3>
-                            Développeur web
-                        </h3>
-                        <p class="h3-subtitle">
-                            Septembre 2022 - Août 2024
-                        </p>
-                        <p class="subtext tag">
-                            Alternance
-                        </p>
-                    </header>
-                    <p>
-                        Après un stage enrichissant, je rejoins Les Chamanes en alternance pour approfondir ma pratique du <a href="{{site.baseurl}}/compétences/web-backend">Développement web</a>. Mes missions incluent la maintenance du site <a href="http://www.nature.fr">nature.fr</a>, le développement d'une API .Net <a href="{{site.baseurl}}/projets/sagelink">SageLink</a>, l'amélioration de l'application <a href="{{site.baseurl}}/projets/simplink">SimpLink</a> et la refonte du site <a href="http://www.franckherval.com">franckherval.com</a>.
-                    </p>
-                </article>
-                <a href="{{pageData.url}}" class="secondary">Mon parcours complet</a>
-            </div>
-        </section>
-    </section>
-    {% endif %}
-    
-    <section class="three-col post-list-excerpt">
-        <header>
-            <h2>Réalisations</h2>
-            <p class="h2-subtitle">Mes projets et contributions</p>
-        </header>
-        <div class="skill-grid">
-        {% assign post1 = site.posts | where_exp: "post", "post.url contains 'sagelink'"%}
-        {% assign post2 = site.posts | where_exp: "post", "post.url contains 'warnit'"%}
-        {% assign post3 = site.posts | where_exp: "post", "post.url contains 'leadercade'"%}
-        {% assign posts_to_display = post1 | concat: post2 | concat: post3 %}
-        {% for post in posts_to_display %}
-        <article class="card">
-            <img class="color" height="512" width="512" src="{{post.img}}" alt="{{Icone représentant la compétence {{ post.title }}}}"/>
-            <header>
-                <h3>{{post.title}}</h3>
-                <p class="h3-subtitle">{{post.tags[0]}}</p>
-            </header>
-            {% assign excerpt = post.content | split: "<!-- BEGIN_EXCERPT -->" | last | split: "<!-- END_EXCERPT -->" | first | strip_html %}
-            {% if excerpt %}
-            <details>
-                <summary>Description</summary>
-                <div class="body">
-                    <p>{{ excerpt }}</p>
-                </div>
-            </details>
-            {% endif %}
-            <a href="{{post.url}}">En savoir plus</a>
-        </article>
-        {% endfor %}
+<section id="about" class="border padded flex-col">
+    <h2>A propos de moi</h2>
+    <div class="section-body flex-col">
+        <div class="inline-card flex-row">
+            <img class="img-small border" height="512" width="512" src="images/graduation%20hats-bro.svg" alt="chapeaux d'université">
+            <p>Diplômé d’un Master en ingénierie logicielle à l’ESIEA</p>
         </div>
-        <a class="secondary" href="/compétences">Toutes mes compétences</a>
-    </section>
-    
-    {% assign pageTitle = "Contact" %}
-    {% assign pageData = site.pages | where: "title", pageTitle | first %}
-    {% if pageData %}
-        <section id="contact">
-            <header>
-                <h2>
-                    {{pageData.title}}
-                </h2>
-                <p class="h2-subtitle">
-                    {{pageData.subtitle}}
+        <div class="inline-card flex-row reverse">
+            <img class="img-small border" height="512" width="512" src="images/Learning-bro.svg" alt="homme apprenant">
+            <p>3 ans d’expérience en développement full-stack web, mobile et desktop.</p>
+        </div>
+        <div class="inline-card flex-row">
+            <img class="img-small border" height="512" width="512" src="images/Project%20Stages-bro.svg" alt="fusée montrant les étapes d'un projet">
+            <p>De nombreux projets menés de bout en bout.</p>
+        </div>
+        <div class="inline-card flex-row reverse">
+            <img class="img-small border" height="512" width="512" src="images/Connected%20world-bro.svg" alt="Personnes connectées autour du globe">
+            <p>Bilingue français-anglais, avec un score TOEIC de 990/990.</p>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="border padded flex-col">
+    <h2>Mes projets</h2>
+    <div class="section-body flex-col">
+        <a class="project-card flex-col border" href="https://store.steampowered.com/app/2609550/100_Caliber_Dash/" target="_blank">
+            <img class="border" src="images/100_caliber_dash.gif" alt="Trailer du jeu 100 Caliber Dash">
+            <div class="flex-col padded">
+                <div class="flex-col">
+                    <h3>100 Caliber Dash</h3>
+                    <p class="h3-subtitle">Auto-entrepreneur</p>
+                </div>
+                <p>
+                    Démo jouable d’un jeu de tir à la première personne rapide et stylisé, développée pour une analyse du marché sur Steam.
                 </p>
-            </header>
-            {{ pageData.excerpt }}
-            <a href="/contact" class="secondary">Autres réseaux</a>
-        </section>
-    {% endif %}
-</div>
+                <div class="flex-row">
+                    <p class="tag">Unity, .Net, C#</p>
+                    <p class="subtext">Oct 24 - Mar 25</p>
+                </div>
+            </div>
+        </a>
+        <a class="project-card flex-col border" href="https://store.steampowered.com/app/3651180/Daddys_Long_Milk_Run/" target="_blank">
+            <img class="border" src="images/dlmr.gif" alt="trailer du jeu Daddy's Long Milk Run">
+            <div class="flex-col padded">
+                <div class="flex-col">
+                    <h3>Daddy's Long Milk Run</h3>
+                    <p class="h3-subtitle">Auto-entrepreneur</p>
+                </div>
+                <p>
+                    Jeu d'exploration en 3D, conçu et développé en deux semaines puis promu en deux autres, avec plus de 100 téléchargements dès la première semaine sur Steam.
+                </p>
+                <div class="flex-row">
+                    <p class="tag">Unity, .Net, C#</p>
+                    <p class="subtext">Apr 25</p>
+                </div>
+            </div>
+        </a>
+        <a class="project-card flex-col border" href="https://www.franckherval.com/" target="_blank">
+            <img class="border" src="images/www.franckherval.com_.png" alt="capture d'ecran su site Franck Herval">
+            <div class="flex-col padded">
+                <div class="flex-col">
+                    <h3>Franck Herval</h3>
+                    <p class="h3-subtitle">Alternant développeur web</p>
+                </div>
+                <p>
+                    Refonte graphique du site e-commerce sous WordPress. Intégration des maquettes de l’équipe design. Choix et modification des plugins ainsi que de la structure après veille technologique, pour améliorer les performances et la maintenabilité.
+                </p>
+                <div class="flex-row">
+                    <p class="tag">Wordpress, PHP, MySQL</p>
+                    <p class="subtext">2024</p>
+                </div>
+            </div>
+        </a>
+        <a class="project-card flex-col border">
+            <img class="border" src="images/Server%20status-bro.svg" alt="A man checking servers">
+            <div class="flex-col padded">
+                <div class="flex-col">
+                    <h3>SageLink</h3>
+                    <p class="h3-subtitle">Alternant développeur web</p>
+                </div>
+                <p>
+                    API en .NET conçue, structurée et développée de bout en bout pour synchroniser les données entre Sage et les sites e-commerce, avec documentation complète à l’appui.
+                </p>
+                <div class="flex-row">
+                    <p class="tag">.Net, C#, SQL Server</p>
+                    <p class="subtext">2023 - 2024</p>
+                </div>
+            </div>
+        </a>
+        <a class="project-card flex-col border" href="https://www.nature.fr/" target="_blank">
+            <img class="border" src="images/www.nature.fr_fr_.png" alt="capture d'ecran du site nature.fr">
+            <div class="flex-col padded">
+                <div class="flex-col">
+                    <h3>Nature Bijoux</h3>
+                    <p class="h3-subtitle">Stagiaire développeur web</p>
+                </div>
+                <p>
+                    Apprentissage avancé de WordPress, refonte du site basée sur les maquettes design et une analyse produit menée via un tableau Excel pour optimiser le système de filtrage.
+                </p>
+                <div class="flex-row">
+                    <p class="tag">Wordpress, PHP, MySQL</p>
+                    <p class="subtext">2022</p>
+                </div>
+            </div>
+        </a>
+        <a class="project-card flex-col border">
+            <img class="border" src="images/savanhike.gif" alt="trailer du jeu Savanhike">
+            <div class="flex-col padded">
+                <div class="flex-col">
+                    <h3>Savanhike</h3>
+                    <p class="h3-subtitle">Auto-entrepreneur</p>
+                </div>
+                <p>
+                    Jeu de plateforme 2D inspiré de Mario, développé sous Unity et publié sur le Play Store et l’App Store, ayant dépassé les 1 000 téléchargements grâce à ma campagne de promotion sur TikTok.
+                </p>
+                <div class="flex-row">
+                    <p class="tag">Unity, .Net, C#</p>
+                    <p class="subtext">Mar 22 - Aug 22</p>
+                </div>
+            </div>
+        </a>
+        <a class="project-card flex-col border">
+            <img class="border" src="images/Warning-bro.svg" alt="A warning on a laptop">
+            <div class="flex-col padded">
+                <div class="flex-col">
+                    <h3>Warnit</h3>
+                    <p class="h3-subtitle">Stagiaire développeur full-stack</p>
+                </div>
+                <p>
+                    Application d’alerte destinée aux agents publics, développée en WPF puis portée sur Android, avec participation à la conception, aux maquettes et aux échanges fonctionnels.
+                </p>
+                <div class="flex-row">
+                    <p class="tag">C#, Java</p>
+                    <p class="subtext">2021 - 2022</p>
+                </div>
+            </div>
+        </a>
+        <a class="project-card flex-col border">
+            <img class="border" src="images/cappsule.gif" alt="trailer de l'application Cappsule">
+            <div class="flex-col padded">
+                <div class="flex-col">
+                    <h3>Cappsule</h3>
+                    <p class="h3-subtitle">Auto-entrepreneur</p>
+                </div>
+                <p>
+                    Application mobile de gestion de garde-robe proposant des tenues selon la météo et la disponibilité des vêtements enregistrés.
+                </p>
+                <div class="flex-row">
+                    <p class="tag">Kotlin, Swift</p>
+                    <p class="subtext">Dec 21 - Feb 22</p>
+                </div>
+            </div>
+        </a>
+        <a class="project-card flex-col border">
+            <img class="border" src="images/crypto.gif" alt="trailer de l'application Crypto.HODL">
+            <div class="flex-col padded">
+                <div class="flex-col">
+                    <h3>Crypto.HODL</h3>
+                    <p class="h3-subtitle">Auto-entrepreneur</p>
+                </div>
+                <p>
+                    Application mobile de suivi de portefeuille crypto, permettant d’enregistrer ses actifs et de suivre leur évolution.
+                </p>
+                <div class="flex-row">
+                    <p class="tag">Kotlin, Swift</p>
+                    <p class="subtext">Apr 22</p>
+                </div>
+            </div>
+        </a>
+        <a class="project-card flex-col border">
+            <img class="border" src="images/leadercade.gif" alt="trailer du jeu LeaderCade">
+            <div class="flex-col padded">
+                <div class="flex-col">
+                    <h3>LeaderCade</h3>
+                    <p class="h3-subtitle">Auto-entrepreneur</p>
+                </div>
+                <p>
+                    Jeu mobile de football hyper-casual développé sous Unity, axé sur des concours de tirs au but, ayant servi de base à l’apprentissage de la gestion de projet, du versioning et du déploiement sur iOS et Android.
+                </p>
+                <div class="flex-row">
+                    <p class="tag">Unity, .Net, C#</p>
+                    <p class="subtext">Mar 22</p>
+                </div>
+            </div>
+        </a>
+        <a class="project-card flex-col border">
+            <img class="border" src="images/Checking%20boxes-bro.svg" alt="A women checking boxes in a warehouse">
+            <div class="flex-col padded">
+                <div class="flex-col">
+                    <h3>Simplink</h3>
+                    <p class="h3-subtitle">Semestre 2 ESIEA</p>
+                </div>
+                <p>
+                    Application PHP interne de centralisation et de gestion des commandes, conçue pour améliorer la visibilité et le traitement des flux e-commerce au sein de l’entreprise.
+                </p>
+                <div class="flex-row">
+                    <p class="tag">PHP</p>
+                    <p class="subtext">Mar 20 - Jul 20</p>
+                </div>
+            </div>
+        </a>
+    </div>
+</section>
+
+<section id="contact" class="border padded flex-col">
+    <h2>Me contacter</h2>
+    <div class="flex-row">
+        <a class="link-card flex-col" href="https://www.linkedin.com/in/ndiaye-malick-2000/" target="_blank">
+            <img src="images/Profile%20data-bro.svg" alt="Homme montrant son profil sur internet"/>
+            <p>Linkedin</p>
+        </a>
+        <a class="link-card flex-col" href="mailto:malick1ndiaye0@gmail.com">
+            <img src="images/Newsletter-bro.svg" alt="Homme à côté d'un e-mail"/>
+            <p>E-Mail</p>
+        </a>
+    </div>
+</section>
+</body>
+</html>

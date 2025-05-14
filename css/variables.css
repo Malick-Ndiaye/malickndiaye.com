@@ -1,0 +1,10 @@
+﻿:root {
+    --color-background: #FFFFFF;
+    --color-background-dark: #333333;
+    --color-background-accent: #e0d4b7;
+
+    --color-foreground: #000000;
+    --color-foreground-alt: #FFFFFF;
+
+    --size-desktop-max-width: 1200px;
+}
